@@ -1,0 +1,12 @@
+2025-09-15 15:08:33,882 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-15 15:08:39,718 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-15 15:08:41,497 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-15 15:08:41,878 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-15 15:08:41,973 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-15 15:08:42,329 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-15 15:08:42,401 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-15 15:08:45,386 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-15 15:08:47,410 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-15 15:08:48,112 - INFO - pages.base_page - Locating element: ('xpath', "//button[@title='Apply Leave']")
+2025-09-15 15:08:48,204 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@title='Apply Leave']")
+2025-09-15 15:08:49,100 - INFO - pages.dashboard_page - Clicked Apply Leave from Quick Launch

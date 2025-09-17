@@ -1,0 +1,10 @@
+2025-09-17 13:29:58,663 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-17 13:30:06,681 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-17 13:30:08,468 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-17 13:30:08,849 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-17 13:30:08,949 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-17 13:30:09,351 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-17 13:30:09,422 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-17 13:30:17,275 - WARNING - pages.login_page - Dashboard not found, checking error message
+2025-09-17 13:30:20,809 - ERROR - pages.login_page - Login failed – Neither dashboard nor error message appeared
+2025-09-17 13:30:31,480 - ERROR - pages.dashboard_page - Dashboard not loaded

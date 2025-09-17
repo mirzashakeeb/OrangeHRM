@@ -1,0 +1,32 @@
+2025-09-15 12:58:09,568 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-15 12:58:14,746 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-15 12:58:16,376 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-15 12:58:16,739 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-15 12:58:16,848 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-15 12:58:17,232 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-15 12:58:17,317 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-15 12:58:20,095 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-15 12:58:22,539 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-15 12:58:23,115 - INFO - pages.base_page - Locating element: ('xpath', "//span[text()='PIM']")
+2025-09-15 12:58:23,178 - INFO - pages.base_page - Clicking element: ('xpath', "//span[text()='PIM']")
+2025-09-15 12:58:24,418 - INFO - pages.dashboard_page - Navigated to PIM Module
+2025-09-15 12:58:24,420 - INFO - pages.base_page - Locating element: ('xpath', "//button[normalize-space()='Add']")
+2025-09-15 12:58:25,240 - INFO - pages.base_page - Clicking element: ('xpath', "//button[normalize-space()='Add']")
+2025-09-15 12:58:27,191 - INFO - pages.pim_page - Clicked Add Employee button
+2025-09-15 12:58:27,925 - INFO - pages.base_page - Locating element: ('name', 'firstName')
+2025-09-15 12:58:27,988 - INFO - pages.base_page - Typing into element ('name', 'firstName'): MIRZA
+2025-09-15 12:58:28,561 - INFO - pages.base_page - Locating element: ('name', 'lastName')
+2025-09-15 12:58:28,616 - INFO - pages.base_page - Typing into element ('name', 'lastName'): SHAKEEB
+2025-09-15 12:58:28,916 - INFO - pages.base_page - Locating element: ('xpath', "//span[@class='oxd-switch-input oxd-switch-input--active --label-right']")
+2025-09-15 12:58:28,985 - INFO - pages.base_page - Clicking element: ('xpath', "//span[@class='oxd-switch-input oxd-switch-input--active --label-right']")
+2025-09-15 12:58:29,140 - INFO - pages.pim_page - Toggled Create Login Details
+2025-09-15 12:58:29,224 - INFO - pages.pim_page - Login details fields are visible now
+2025-09-15 12:58:29,226 - INFO - pages.base_page - Locating element: ('xpath', "//input[@autocomplete='off' and not(@type) and contains(@class, 'oxd-input')]")
+2025-09-15 12:58:29,281 - INFO - pages.base_page - Typing into element ('xpath', "//input[@autocomplete='off' and not(@type) and contains(@class, 'oxd-input')]"): mirzasha123
+2025-09-15 12:58:29,630 - INFO - pages.base_page - Locating element: ('xpath', "(//input[@type='password'])[1]")
+2025-09-15 12:58:29,694 - INFO - pages.base_page - Typing into element ('xpath', "(//input[@type='password'])[1]"): ********
+2025-09-15 12:58:30,048 - INFO - pages.base_page - Locating element: ('xpath', "(//input[@type='password'])[2]")
+2025-09-15 12:58:30,114 - INFO - pages.base_page - Typing into element ('xpath', "(//input[@type='password'])[2]"): ********
+2025-09-15 12:58:30,498 - INFO - pages.base_page - Locating element: ('xpath', "//button[normalize-space()='Save']")
+2025-09-15 12:58:30,565 - INFO - pages.base_page - Clicking element: ('xpath', "//button[normalize-space()='Save']")
+2025-09-15 12:58:30,698 - INFO - pages.pim_page - Clicked Save button

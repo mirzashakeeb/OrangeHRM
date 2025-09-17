@@ -1,0 +1,9 @@
+2025-09-15 15:25:46,852 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-15 15:25:56,931 - ERROR - pages.base_page - Element not found: ('name', 'username')
+2025-09-15 15:25:57,600 - ERROR - pages.base_page - Screenshot saved at: screenshots/username_not_found.png
+2025-09-15 15:26:09,764 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-15 15:26:19,844 - ERROR - pages.base_page - Element not found: ('name', 'username')
+2025-09-15 15:26:20,493 - ERROR - pages.base_page - Screenshot saved at: screenshots/username_not_found.png
+2025-09-15 15:26:30,914 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-15 15:26:41,039 - ERROR - pages.base_page - Element not found: ('name', 'username')
+2025-09-15 15:26:41,859 - ERROR - pages.base_page - Screenshot saved at: screenshots/username_not_found.png

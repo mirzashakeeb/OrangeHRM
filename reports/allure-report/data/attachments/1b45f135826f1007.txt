@@ -1,0 +1,833 @@
+2025-09-10 12:30:03,632 - INFO - conftest - Initializing WebDriver
+2025-09-10 12:30:03,632 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 12:30:04,102 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 12:30:04,382 - INFO - WDM - Driver downloading response is 200
+2025-09-10 12:30:11,025 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 12:30:14,809 - INFO - test_login - Starting login test with user: Admin
+2025-09-10 12:30:14,847 - INFO - test_login - Opening login page
+2025-09-10 12:30:14,857 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 12:30:22,785 - INFO - test_login - Trying to login with username=Admin and password=admin123
+2025-09-10 12:30:22,789 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 12:30:27,886 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-10 12:30:28,208 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 12:30:28,290 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 12:30:28,700 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 12:30:28,813 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 12:30:32,395 - INFO - pages.login_pages - Login successful – Dashboard loaded
+2025-09-10 12:30:32,409 - INFO - test_login - Expected result: success, Actual result: success
+2025-09-10 12:30:32,412 - INFO - test_login - Login test passed for user: Admin
+2025-09-10 12:30:32,417 - INFO - conftest - Test test_login[Admin-admin123-success] PASSED
+2025-09-10 12:30:32,422 - INFO - conftest - Quitting WebDriver
+2025-09-10 12:30:35,978 - INFO - conftest - Initializing WebDriver
+2025-09-10 12:30:35,980 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 12:30:36,525 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 12:30:36,763 - INFO - WDM - Driver downloading response is 200
+2025-09-10 12:30:41,272 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 12:30:44,017 - INFO - test_login - Starting login test with user: invaliduser
+2025-09-10 12:30:44,024 - INFO - test_login - Opening login page
+2025-09-10 12:30:44,041 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 12:30:52,686 - INFO - test_login - Trying to login with username=invaliduser and password=admin123
+2025-09-10 12:30:52,691 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 12:30:58,264 - INFO - pages.base_page - Typing into element ('name', 'username'): invaliduser
+2025-09-10 12:30:58,697 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 12:30:58,808 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 12:30:59,215 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 12:30:59,308 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 12:31:04,677 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 12:31:07,878 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 12:31:07,879 - INFO - test_login - Expected result: failure, Actual result: failure
+2025-09-10 12:31:07,879 - INFO - test_login - Login test passed for user: invaliduser
+2025-09-10 12:31:07,885 - INFO - conftest - Test test_login[invaliduser-admin123-failure] PASSED
+2025-09-10 12:31:07,888 - INFO - conftest - Quitting WebDriver
+2025-09-10 12:31:10,960 - INFO - conftest - Initializing WebDriver
+2025-09-10 12:31:10,962 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 12:31:11,513 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 12:31:11,719 - INFO - WDM - Driver downloading response is 200
+2025-09-10 12:31:16,441 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 12:31:19,141 - INFO - test_login - Starting login test with user: admin
+2025-09-10 12:31:19,148 - INFO - test_login - Opening login page
+2025-09-10 12:31:19,150 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 12:31:28,310 - INFO - test_login - Trying to login with username=admin and password=wrongpass
+2025-09-10 12:31:28,313 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 12:31:30,321 - INFO - pages.base_page - Typing into element ('name', 'username'): admin
+2025-09-10 12:31:30,656 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 12:31:30,736 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 12:31:31,049 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 12:31:31,120 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 12:31:38,236 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 12:31:41,421 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 12:31:41,423 - INFO - test_login - Expected result: failure, Actual result: failure
+2025-09-10 12:31:41,425 - INFO - test_login - Login test passed for user: admin
+2025-09-10 12:31:41,427 - INFO - conftest - Test test_login[admin-wrongpass-failure] PASSED
+2025-09-10 12:31:41,430 - INFO - conftest - Quitting WebDriver
+2025-09-10 12:31:44,018 - INFO - conftest - Initializing WebDriver
+2025-09-10 12:31:44,019 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 12:31:44,564 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 12:31:44,766 - INFO - WDM - Driver downloading response is 200
+2025-09-10 12:31:48,796 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 12:31:51,369 - INFO - test_login - Starting login test with user: testuser
+2025-09-10 12:31:51,373 - INFO - test_login - Opening login page
+2025-09-10 12:31:51,376 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 12:31:58,212 - INFO - test_login - Trying to login with username=testuser and password=test123
+2025-09-10 12:31:58,215 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 12:32:02,420 - INFO - pages.base_page - Typing into element ('name', 'username'): testuser
+2025-09-10 12:32:02,791 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 12:32:02,879 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 12:32:03,308 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 12:32:03,394 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 12:32:10,883 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 12:32:14,075 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 12:32:14,077 - INFO - test_login - Expected result: failure, Actual result: failure
+2025-09-10 12:32:14,078 - INFO - test_login - Login test passed for user: testuser
+2025-09-10 12:32:14,082 - INFO - conftest - Test test_login[testuser-test123-failure] PASSED
+2025-09-10 12:32:14,084 - INFO - conftest - Quitting WebDriver
+2025-09-10 12:32:16,939 - INFO - conftest - Initializing WebDriver
+2025-09-10 12:32:16,940 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 12:32:17,485 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 12:32:17,679 - INFO - WDM - Driver downloading response is 200
+2025-09-10 12:32:21,717 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 12:32:24,256 - INFO - test_login - Starting login test with user: 
+2025-09-10 12:32:24,264 - INFO - test_login - Opening login page
+2025-09-10 12:32:24,266 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 12:32:32,529 - INFO - test_login - Trying to login with username= and password=admin123
+2025-09-10 12:32:32,532 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 12:32:34,286 - INFO - pages.base_page - Typing into element ('name', 'username'): 
+2025-09-10 12:32:34,530 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 12:32:34,634 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 12:32:35,084 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 12:32:35,165 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 12:32:40,669 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 12:32:43,862 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 12:32:43,865 - INFO - test_login - Expected result: failure, Actual result: failure
+2025-09-10 12:32:43,866 - INFO - test_login - Login test passed for user: 
+2025-09-10 12:32:43,866 - INFO - conftest - Test test_login[-admin123-failure] PASSED
+2025-09-10 12:32:43,866 - INFO - conftest - Quitting WebDriver
+2025-09-10 12:32:46,778 - INFO - conftest - Initializing WebDriver
+2025-09-10 12:32:46,780 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 12:32:47,337 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 12:32:47,784 - INFO - WDM - Driver downloading response is 200
+2025-09-10 12:32:52,043 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 12:32:54,598 - INFO - test_login - Starting login test with user: admin
+2025-09-10 12:32:54,602 - INFO - test_login - Opening login page
+2025-09-10 12:32:54,604 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 12:33:25,014 - INFO - test_login - Trying to login with username=admin and password=
+2025-09-10 12:33:25,018 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 12:33:35,778 - INFO - pages.base_page - Typing into element ('name', 'username'): admin
+2025-09-10 12:33:36,110 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 12:33:36,213 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 12:33:36,583 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 12:33:36,684 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 12:33:42,241 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 12:33:45,427 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 12:33:45,427 - INFO - test_login - Expected result: success, Actual result: failure
+2025-09-10 12:33:46,444 - ERROR - conftest - Test test_login[admin--success] FAILED
+2025-09-10 12:33:46,460 - INFO - conftest - Quitting WebDriver
+2025-09-10 13:51:38,343 - INFO - conftest - Initializing WebDriver
+2025-09-10 13:51:38,345 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 13:51:38,993 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 13:53:03,559 - INFO - WDM - Driver downloading response is 200
+2025-09-10 13:53:44,618 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 13:53:48,000 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 13:53:55,616 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 13:53:58,068 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-10 13:53:58,524 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 13:53:58,674 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 13:53:59,089 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 13:53:59,152 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 13:54:02,170 - INFO - pages.login_pages - Login successful – Dashboard loaded
+2025-09-10 13:54:05,369 - INFO - conftest - Test test_login[Admin-admin123-success] PASSED
+2025-09-10 13:54:05,448 - INFO - conftest - Quitting WebDriver
+2025-09-10 13:54:08,268 - INFO - conftest - Initializing WebDriver
+2025-09-10 13:54:08,270 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 13:54:08,916 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 13:55:33,259 - INFO - WDM - Driver downloading response is 200
+2025-09-10 13:55:37,792 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 13:55:40,649 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 13:55:58,138 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 13:56:00,138 - INFO - pages.base_page - Typing into element ('name', 'username'): invaliduser
+2025-09-10 13:56:00,581 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 13:56:00,677 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 13:56:01,037 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 13:56:01,125 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 13:56:08,006 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 13:56:11,277 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 13:56:12,029 - INFO - conftest - Test test_login[invaliduser-admin123-failure] PASSED
+2025-09-10 13:56:12,123 - INFO - conftest - Quitting WebDriver
+2025-09-10 13:56:14,903 - INFO - conftest - Initializing WebDriver
+2025-09-10 13:56:14,903 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 13:56:15,467 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 13:57:23,352 - INFO - WDM - Driver downloading response is 200
+2025-09-10 13:57:27,401 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 13:57:30,000 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 13:57:36,272 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 13:57:37,600 - INFO - pages.base_page - Typing into element ('name', 'username'): admin
+2025-09-10 13:57:37,950 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 13:57:38,029 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 13:57:38,371 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 13:57:38,435 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 13:57:44,065 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 13:57:47,278 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 13:57:48,296 - INFO - conftest - Test test_login[admin-wrongpass-failure] PASSED
+2025-09-10 13:57:48,344 - INFO - conftest - Quitting WebDriver
+2025-09-10 13:57:51,321 - INFO - conftest - Initializing WebDriver
+2025-09-10 13:57:51,321 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 13:57:51,871 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 13:57:52,155 - INFO - WDM - Driver downloading response is 200
+2025-09-10 13:57:56,275 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 13:57:59,635 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 13:58:05,211 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 13:58:08,293 - INFO - pages.base_page - Typing into element ('name', 'username'): testuser
+2025-09-10 13:58:08,626 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 13:58:08,722 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 13:58:09,007 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 13:58:09,083 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 13:58:15,727 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 13:58:18,923 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 13:58:20,931 - INFO - conftest - Test test_login[testuser-test123-failure] PASSED
+2025-09-10 13:58:20,979 - INFO - conftest - Quitting WebDriver
+2025-09-10 13:58:23,745 - INFO - conftest - Initializing WebDriver
+2025-09-10 13:58:23,745 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 13:58:24,733 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 13:58:24,994 - INFO - WDM - Driver downloading response is 200
+2025-09-10 13:58:38,264 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 13:58:41,679 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 13:58:49,240 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 13:58:50,245 - INFO - pages.base_page - Typing into element ('name', 'username'): 
+2025-09-10 13:58:50,492 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 13:58:50,571 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 13:58:50,936 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 13:58:51,000 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 13:58:56,461 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 13:58:59,633 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 13:59:01,595 - INFO - conftest - Test test_login[-admin123-failure] PASSED
+2025-09-10 13:59:01,635 - INFO - conftest - Quitting WebDriver
+2025-09-10 13:59:04,557 - INFO - conftest - Initializing WebDriver
+2025-09-10 13:59:04,557 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 13:59:05,107 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 13:59:05,322 - INFO - WDM - Driver downloading response is 200
+2025-09-10 13:59:09,554 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 13:59:12,478 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 13:59:17,639 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 13:59:19,303 - INFO - pages.base_page - Typing into element ('name', 'username'): admin
+2025-09-10 13:59:19,632 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 13:59:19,744 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 13:59:20,056 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 13:59:20,144 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 13:59:25,665 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 13:59:28,873 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 13:59:30,560 - ERROR - conftest - Test test_login[admin--success] FAILED
+2025-09-10 13:59:31,050 - INFO - conftest - Quitting WebDriver
+2025-09-10 15:21:36,473 - INFO - conftest - Initializing WebDriver
+2025-09-10 15:21:36,474 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 15:21:37,088 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 15:21:37,447 - INFO - WDM - Driver downloading response is 200
+2025-09-10 15:21:41,340 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 15:21:44,475 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 15:21:51,020 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 15:21:52,525 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-10 15:21:52,926 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 15:21:53,011 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 15:21:53,433 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 15:21:53,510 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 15:21:56,323 - INFO - pages.login_pages - Login successful – Dashboard loaded
+2025-09-10 15:21:59,798 - INFO - conftest - Test test_login[Admin-admin123-success] PASSED
+2025-09-10 15:21:59,840 - INFO - conftest - Quitting WebDriver
+2025-09-10 15:22:02,916 - INFO - conftest - Initializing WebDriver
+2025-09-10 15:22:02,916 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 15:22:03,494 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 15:22:03,728 - INFO - WDM - Driver downloading response is 200
+2025-09-10 15:22:07,612 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 15:22:10,972 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 15:22:16,101 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 15:22:17,807 - INFO - pages.base_page - Typing into element ('name', 'username'): invaliduser
+2025-09-10 15:22:18,233 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 15:22:18,334 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 15:22:18,725 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 15:22:18,818 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 15:22:24,458 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 15:22:27,604 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 15:22:28,566 - INFO - conftest - Test test_login[invaliduser-admin123-failure] PASSED
+2025-09-10 15:22:28,609 - INFO - conftest - Quitting WebDriver
+2025-09-10 15:22:31,541 - INFO - conftest - Initializing WebDriver
+2025-09-10 15:22:31,541 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 15:22:32,075 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 15:22:32,260 - INFO - WDM - Driver downloading response is 200
+2025-09-10 15:22:35,635 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 15:22:38,327 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 15:22:44,091 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 15:22:45,384 - INFO - pages.base_page - Typing into element ('name', 'username'): admin
+2025-09-10 15:22:45,712 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 15:22:45,810 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 15:22:46,216 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 15:22:46,298 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 15:22:53,547 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 15:22:56,979 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 15:22:57,872 - INFO - conftest - Test test_login[admin-wrongpass-failure] PASSED
+2025-09-10 15:22:57,919 - INFO - conftest - Quitting WebDriver
+2025-09-10 15:23:01,427 - INFO - conftest - Initializing WebDriver
+2025-09-10 15:23:01,428 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 15:23:02,042 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 15:23:02,229 - INFO - WDM - Driver downloading response is 200
+2025-09-10 15:23:06,166 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 15:23:08,812 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 15:23:14,815 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 15:23:16,127 - INFO - pages.base_page - Typing into element ('name', 'username'): testuser
+2025-09-10 15:23:16,527 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 15:23:16,630 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 15:23:17,085 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 15:23:17,168 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 15:23:24,136 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 15:23:27,324 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 15:23:28,031 - INFO - conftest - Test test_login[testuser-test123-failure] PASSED
+2025-09-10 15:23:28,073 - INFO - conftest - Quitting WebDriver
+2025-09-10 15:23:30,870 - INFO - conftest - Initializing WebDriver
+2025-09-10 15:23:30,870 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 15:23:31,478 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 15:23:31,683 - INFO - WDM - Driver downloading response is 200
+2025-09-10 15:23:35,808 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 15:23:38,253 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 15:23:43,882 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 15:23:45,237 - INFO - pages.base_page - Typing into element ('name', 'username'): 
+2025-09-10 15:23:45,539 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 15:23:45,652 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 15:23:46,115 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 15:23:46,208 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 15:23:51,807 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 15:23:55,078 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 15:23:55,947 - INFO - conftest - Test test_login[-admin123-failure] PASSED
+2025-09-10 15:23:55,994 - INFO - conftest - Quitting WebDriver
+2025-09-10 15:23:58,794 - INFO - conftest - Initializing WebDriver
+2025-09-10 15:23:58,795 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 15:23:59,299 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 15:23:59,479 - INFO - WDM - Driver downloading response is 200
+2025-09-10 15:24:02,903 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 15:24:05,506 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 15:24:11,349 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 15:24:12,347 - INFO - pages.base_page - Typing into element ('name', 'username'): admin
+2025-09-10 15:24:12,700 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 15:24:12,816 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 15:24:13,139 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 15:24:13,215 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 15:24:18,729 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 15:24:21,998 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 15:24:24,417 - ERROR - conftest - Test test_login[admin--success] FAILED
+2025-09-10 15:24:25,292 - INFO - conftest - Quitting WebDriver
+2025-09-10 22:26:06,149 - INFO - conftest - Initializing WebDriver
+2025-09-10 22:26:06,164 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 22:26:42,316 - INFO - WDM - There is no [win64] chromedriver "109.0.5414.74" for browser google-chrome "109.0.5414" in cache
+2025-09-10 22:26:42,316 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 22:26:43,157 - INFO - WDM - Driver downloading response is 200
+2025-09-10 22:26:49,452 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 22:26:54,468 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 22:27:00,084 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 22:27:01,956 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-10 22:27:02,388 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 22:27:02,484 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 22:27:02,916 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:27:03,084 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:27:05,964 - INFO - pages.login_pages - Login successful – Dashboard loaded
+2025-09-10 22:27:08,909 - INFO - conftest - Test test_login[Admin-admin123-success] PASSED
+2025-09-10 22:27:08,965 - INFO - conftest - Quitting WebDriver
+2025-09-10 22:27:11,767 - INFO - conftest - Initializing WebDriver
+2025-09-10 22:27:11,767 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 22:27:15,857 - INFO - WDM - Driver [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74\chromedriver.exe] found in cache
+2025-09-10 22:27:18,318 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 22:27:24,462 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 22:27:25,779 - INFO - pages.base_page - Typing into element ('name', 'username'): invaliduser
+2025-09-10 22:27:26,207 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 22:27:26,295 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 22:27:26,711 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:27:26,807 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:27:33,848 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 22:27:37,344 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 22:27:38,202 - INFO - conftest - Test test_login[invaliduser-admin123-failure] PASSED
+2025-09-10 22:27:38,290 - INFO - conftest - Quitting WebDriver
+2025-09-10 22:27:41,258 - INFO - conftest - Initializing WebDriver
+2025-09-10 22:27:41,258 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 22:27:45,871 - INFO - WDM - Driver [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74\chromedriver.exe] found in cache
+2025-09-10 22:27:48,146 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 22:27:53,970 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 22:27:55,346 - INFO - pages.base_page - Typing into element ('name', 'username'): admin
+2025-09-10 22:27:55,842 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 22:27:55,930 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 22:27:56,330 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:27:56,474 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:28:03,652 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 22:28:06,924 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 22:28:07,699 - INFO - conftest - Test test_login[admin-wrongpass-failure] PASSED
+2025-09-10 22:28:07,745 - INFO - conftest - Quitting WebDriver
+2025-09-10 22:28:12,348 - INFO - conftest - Initializing WebDriver
+2025-09-10 22:28:12,348 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 22:28:16,427 - INFO - WDM - Driver [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74\chromedriver.exe] found in cache
+2025-09-10 22:28:18,839 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 22:28:24,402 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 22:28:25,450 - INFO - pages.base_page - Typing into element ('name', 'username'): testuser
+2025-09-10 22:28:25,840 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 22:28:25,968 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 22:28:26,320 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:28:26,392 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:28:33,466 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 22:28:36,659 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 22:28:37,335 - INFO - conftest - Test test_login[testuser-test123-failure] PASSED
+2025-09-10 22:28:37,382 - INFO - conftest - Quitting WebDriver
+2025-09-10 22:28:40,236 - INFO - conftest - Initializing WebDriver
+2025-09-10 22:28:40,236 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 22:28:44,066 - INFO - WDM - Driver [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74\chromedriver.exe] found in cache
+2025-09-10 22:28:46,885 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 22:28:54,550 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 22:28:55,875 - INFO - pages.base_page - Typing into element ('name', 'username'): 
+2025-09-10 22:28:56,125 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 22:28:56,259 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 22:28:56,675 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:28:56,755 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:29:02,253 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 22:29:05,401 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 22:29:06,118 - INFO - conftest - Test test_login[-admin123-failure] PASSED
+2025-09-10 22:29:06,167 - INFO - conftest - Quitting WebDriver
+2025-09-10 22:29:08,901 - INFO - conftest - Initializing WebDriver
+2025-09-10 22:29:08,917 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 22:29:12,624 - INFO - WDM - Driver [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74\chromedriver.exe] found in cache
+2025-09-10 22:29:15,189 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 22:29:21,557 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 22:29:24,613 - INFO - pages.base_page - Typing into element ('name', 'username'): admin
+2025-09-10 22:29:24,967 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 22:29:25,079 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 22:29:25,359 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:29:25,439 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:29:30,908 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 22:29:34,064 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 22:29:34,718 - INFO - conftest - Test test_login[admin--failure] PASSED
+2025-09-10 22:29:34,749 - INFO - conftest - Quitting WebDriver
+2025-09-10 22:33:05,819 - INFO - conftest - Initializing WebDriver
+2025-09-10 22:33:05,819 - INFO - conftest - Initializing WebDriver
+2025-09-10 22:33:05,819 - INFO - WDM - xdist worker is: gw1
+2025-09-10 22:33:05,819 - INFO - WDM - xdist worker is: gw2
+2025-09-10 22:33:05,827 - INFO - WDM - xdist worker is: gw0
+2025-09-10 22:33:05,827 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 22:33:05,827 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 22:33:05,827 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 22:33:09,211 - INFO - WDM - There is no [win64] chromedriver "109.0.5414.74" for browser google-chrome "109.0.5414" in cache
+2025-09-10 22:33:09,211 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 22:33:09,235 - INFO - WDM - There is no [win64] chromedriver "109.0.5414.74" for browser google-chrome "109.0.5414" in cache
+2025-09-10 22:33:09,243 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 22:33:09,259 - INFO - WDM - There is no [win64] chromedriver "109.0.5414.74" for browser google-chrome "109.0.5414" in cache
+2025-09-10 22:33:09,259 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-10 22:33:09,660 - INFO - WDM - Driver downloading response is 200
+2025-09-10 22:33:09,740 - INFO - WDM - Driver downloading response is 200
+2025-09-10 22:33:09,740 - INFO - WDM - Driver downloading response is 200
+2025-09-10 22:33:35,910 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\gw1\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 22:33:39,068 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 22:33:42,286 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\gw2\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 22:33:42,494 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\gw0\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-10 22:33:46,016 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 22:33:47,558 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 22:33:47,702 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 22:33:50,534 - INFO - pages.base_page - Typing into element ('name', 'username'): admin
+2025-09-10 22:33:51,246 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 22:33:51,374 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 22:33:52,310 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:33:52,398 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:33:57,607 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 22:33:57,871 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 22:33:59,877 - INFO - pages.base_page - Typing into element ('name', 'username'): 
+2025-09-10 22:34:00,885 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-10 22:34:01,213 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 22:34:01,401 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 22:34:01,559 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 22:34:01,621 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 22:34:01,659 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 22:34:02,104 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:34:02,232 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:34:02,272 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:34:02,304 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:34:04,910 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 22:34:05,736 - INFO - conftest - Test test_login[admin-wrongpass-failure] PASSED
+2025-09-10 22:34:05,872 - INFO - pages.login_pages - Login successful – Dashboard loaded
+2025-09-10 22:34:05,936 - INFO - conftest - Quitting WebDriver
+2025-09-10 22:34:07,690 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 22:34:08,178 - INFO - conftest - Test test_login[Admin-admin123-success] PASSED
+2025-09-10 22:34:08,306 - INFO - conftest - Quitting WebDriver
+2025-09-10 22:34:10,939 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 22:34:10,962 - INFO - conftest - Initializing WebDriver
+2025-09-10 22:34:10,970 - INFO - WDM - xdist worker is: gw1
+2025-09-10 22:34:10,970 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 22:34:11,731 - INFO - conftest - Test test_login[-admin123-failure] PASSED
+2025-09-10 22:34:11,794 - INFO - conftest - Quitting WebDriver
+2025-09-10 22:34:12,147 - INFO - conftest - Initializing WebDriver
+2025-09-10 22:34:12,147 - INFO - WDM - xdist worker is: gw0
+2025-09-10 22:34:12,147 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 22:34:15,740 - INFO - WDM - Driver [C:\Users\MIRZAS\.wdm\gw1\drivers\chromedriver\win64\109.0.5414.74\chromedriver.exe] found in cache
+2025-09-10 22:34:16,193 - INFO - conftest - Initializing WebDriver
+2025-09-10 22:34:16,193 - INFO - WDM - xdist worker is: gw2
+2025-09-10 22:34:16,193 - INFO - WDM - ====== WebDriver manager ======
+2025-09-10 22:34:16,928 - INFO - WDM - Driver [C:\Users\MIRZAS\.wdm\gw0\drivers\chromedriver\win64\109.0.5414.74\chromedriver.exe] found in cache
+2025-09-10 22:34:18,794 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 22:34:20,298 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 22:34:22,587 - INFO - WDM - Driver [C:\Users\MIRZAS\.wdm\gw2\drivers\chromedriver\win64\109.0.5414.74\chromedriver.exe] found in cache
+2025-09-10 22:34:26,006 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-10 22:34:26,823 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 22:34:28,247 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 22:34:28,799 - INFO - pages.base_page - Typing into element ('name', 'username'): testuser
+2025-09-10 22:34:29,439 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 22:34:29,583 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 22:34:30,533 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:34:30,613 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:34:30,973 - INFO - pages.base_page - Typing into element ('name', 'username'): invaliduser
+2025-09-10 22:34:31,397 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 22:34:31,501 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 22:34:32,253 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:34:32,389 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:34:32,949 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-10 22:34:35,616 - INFO - pages.base_page - Typing into element ('name', 'username'): admin
+2025-09-10 22:34:36,152 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-10 22:34:36,288 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-10 22:34:36,720 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:34:36,879 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-10 22:34:37,667 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 22:34:39,510 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 22:34:40,919 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 22:34:41,617 - INFO - conftest - Test test_login[testuser-test123-failure] PASSED
+2025-09-10 22:34:41,695 - INFO - conftest - Quitting WebDriver
+2025-09-10 22:34:42,459 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-10 22:34:42,932 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 22:34:43,685 - INFO - conftest - Test test_login[invaliduser-admin123-failure] PASSED
+2025-09-10 22:34:43,731 - INFO - conftest - Quitting WebDriver
+2025-09-10 22:34:45,674 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-10 22:34:46,600 - INFO - conftest - Test test_login[admin--failure] PASSED
+2025-09-10 22:34:46,647 - INFO - conftest - Quitting WebDriver
+2025-09-11 11:02:53,160 - INFO - conftest - Initializing WebDriver
+2025-09-11 11:02:53,175 - INFO - WDM - ====== WebDriver manager ======
+2025-09-11 11:03:21,514 - INFO - WDM - About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+2025-09-11 11:03:22,014 - INFO - WDM - Driver downloading response is 200
+2025-09-11 11:03:26,094 - INFO - WDM - Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+2025-09-11 11:03:29,991 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-11 11:03:35,579 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-11 11:03:36,834 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-11 11:03:37,211 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-11 11:03:37,301 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-11 11:03:37,759 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-11 11:03:37,955 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-11 11:03:41,546 - INFO - pages.login_pages - Login successful – Dashboard loaded
+2025-09-11 11:03:44,385 - INFO - conftest - Test test_login[Admin-admin123-success] PASSED
+2025-09-11 11:03:44,453 - INFO - conftest - Quitting WebDriver
+2025-09-11 11:03:48,733 - INFO - conftest - Initializing WebDriver
+2025-09-11 11:03:48,733 - INFO - WDM - ====== WebDriver manager ======
+2025-09-11 11:03:52,639 - INFO - WDM - Driver [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74\chromedriver.exe] found in cache
+2025-09-11 11:03:55,391 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-11 11:04:01,442 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-11 11:04:02,915 - INFO - pages.base_page - Typing into element ('name', 'username'): invaliduser
+2025-09-11 11:04:03,259 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-11 11:04:03,337 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-11 11:04:03,650 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-11 11:04:03,759 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-11 11:04:10,354 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-11 11:04:13,526 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-11 11:04:15,527 - INFO - conftest - Test test_login[invaliduser-admin123-failure] PASSED
+2025-09-11 11:04:15,559 - INFO - conftest - Quitting WebDriver
+2025-09-11 11:04:18,894 - INFO - conftest - Initializing WebDriver
+2025-09-11 11:04:18,894 - INFO - WDM - ====== WebDriver manager ======
+2025-09-11 11:04:22,613 - INFO - WDM - Driver [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74\chromedriver.exe] found in cache
+2025-09-11 11:04:25,753 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-11 11:04:32,812 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-11 11:04:34,820 - INFO - pages.base_page - Typing into element ('name', 'username'): admin
+2025-09-11 11:04:35,176 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-11 11:04:35,238 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-11 11:04:35,676 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-11 11:04:35,754 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-11 11:04:43,079 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-11 11:04:46,312 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-11 11:04:47,857 - INFO - conftest - Test test_login[admin-wrongpass-failure] PASSED
+2025-09-11 11:04:47,888 - INFO - conftest - Quitting WebDriver
+2025-09-11 11:04:50,810 - INFO - conftest - Initializing WebDriver
+2025-09-11 11:04:50,810 - INFO - WDM - ====== WebDriver manager ======
+2025-09-11 11:04:55,145 - INFO - WDM - Driver [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74\chromedriver.exe] found in cache
+2025-09-11 11:04:57,909 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-11 11:05:03,890 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-11 11:05:05,197 - INFO - pages.base_page - Typing into element ('name', 'username'): testuser
+2025-09-11 11:05:05,595 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-11 11:05:05,673 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-11 11:05:06,077 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-11 11:05:06,177 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-11 11:05:13,143 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-11 11:05:16,447 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-11 11:05:18,638 - INFO - conftest - Test test_login[testuser-test123-failure] PASSED
+2025-09-11 11:05:18,711 - INFO - conftest - Quitting WebDriver
+2025-09-11 11:05:21,543 - INFO - conftest - Initializing WebDriver
+2025-09-11 11:05:21,546 - INFO - WDM - ====== WebDriver manager ======
+2025-09-11 11:05:25,642 - INFO - WDM - Driver [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74\chromedriver.exe] found in cache
+2025-09-11 11:05:28,721 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-11 11:05:33,986 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-11 11:05:35,616 - INFO - pages.base_page - Typing into element ('name', 'username'): 
+2025-09-11 11:05:35,873 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-11 11:05:36,079 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-11 11:05:36,671 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-11 11:05:36,851 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-11 11:05:42,445 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-11 11:05:45,631 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-11 11:05:46,413 - INFO - conftest - Test test_login[-admin123-failure] PASSED
+2025-09-11 11:05:46,467 - INFO - conftest - Quitting WebDriver
+2025-09-11 11:05:53,106 - INFO - conftest - Initializing WebDriver
+2025-09-11 11:05:53,121 - INFO - WDM - ====== WebDriver manager ======
+2025-09-11 11:05:57,435 - INFO - WDM - Driver [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74\chromedriver.exe] found in cache
+2025-09-11 11:06:00,241 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-11 11:06:05,924 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-11 11:06:07,161 - INFO - pages.base_page - Typing into element ('name', 'username'): admin
+2025-09-11 11:06:07,530 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-11 11:06:07,642 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-11 11:06:07,949 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-11 11:06:08,027 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-11 11:06:13,631 - WARNING - pages.login_pages - Dashboard not found, checking error message
+2025-09-11 11:06:16,793 - ERROR - pages.login_pages - Login failed – Neither dashboard nor error message appeared
+2025-09-11 11:06:17,462 - INFO - conftest - Test test_login[admin--failure] PASSED
+2025-09-11 11:06:17,525 - INFO - conftest - Quitting WebDriver
+2025-09-11 11:24:49,504 - INFO - automation - Initializing WebDriver
+2025-09-11 11:25:43,756 - INFO - automation - Test test_login[Admin-admin123-success] PASSED
+2025-09-11 11:25:43,835 - INFO - automation - Quitting WebDriver
+2025-09-11 11:25:46,666 - INFO - automation - Initializing WebDriver
+2025-09-11 11:26:35,397 - ERROR - automation - Test test_login[invaliduser-admin123-failure] FAILED
+2025-09-11 11:26:37,667 - INFO - automation - Quitting WebDriver
+2025-09-11 11:26:40,817 - INFO - automation - Initializing WebDriver
+2025-09-11 11:27:11,264 - INFO - automation - Test test_login[admin-wrongpass-failure] PASSED
+2025-09-11 11:27:11,317 - INFO - automation - Quitting WebDriver
+2025-09-11 11:27:15,078 - INFO - automation - Initializing WebDriver
+2025-09-11 11:27:56,771 - INFO - automation - Test test_login[testuser-test123-failure] PASSED
+2025-09-11 11:27:56,806 - INFO - automation - Quitting WebDriver
+2025-09-11 11:27:59,728 - INFO - automation - Initializing WebDriver
+2025-09-11 11:28:55,938 - INFO - automation - Test test_login[-admin123-failure] PASSED
+2025-09-11 11:28:56,000 - INFO - automation - Quitting WebDriver
+2025-09-11 11:29:00,524 - INFO - automation - Initializing WebDriver
+2025-09-11 11:29:26,184 - INFO - automation - Test test_login[admin--failure] PASSED
+2025-09-11 11:29:26,231 - INFO - automation - Quitting WebDriver
+2025-09-11 11:35:37,305 - INFO - automation - Initializing WebDriver
+2025-09-11 11:36:01,629 - INFO - automation - Test test_login[Admin-admin123-success] PASSED
+2025-09-11 11:36:01,686 - INFO - automation - Quitting WebDriver
+2025-09-11 11:36:04,804 - INFO - automation - Initializing WebDriver
+2025-09-11 11:36:43,493 - INFO - automation - Test test_login[invaliduser-admin123-failure] PASSED
+2025-09-11 11:36:43,548 - INFO - automation - Quitting WebDriver
+2025-09-11 11:36:46,347 - INFO - automation - Initializing WebDriver
+2025-09-11 11:37:13,043 - INFO - automation - Test test_login[admin-wrongpass-failure] PASSED
+2025-09-11 11:37:13,090 - INFO - automation - Quitting WebDriver
+2025-09-11 11:37:18,048 - INFO - automation - Initializing WebDriver
+2025-09-11 11:37:45,302 - INFO - automation - Test test_login[testuser-test123-failure] PASSED
+2025-09-11 11:37:45,349 - INFO - automation - Quitting WebDriver
+2025-09-11 11:37:48,178 - INFO - automation - Initializing WebDriver
+2025-09-11 11:38:30,202 - INFO - automation - Test test_login[-admin123-failure] PASSED
+2025-09-11 11:38:30,251 - INFO - automation - Quitting WebDriver
+2025-09-11 11:38:33,202 - INFO - automation - Initializing WebDriver
+2025-09-11 11:38:59,413 - INFO - automation - Test test_login[admin--failure] PASSED
+2025-09-11 11:38:59,500 - INFO - automation - Quitting WebDriver
+2025-09-11 12:35:11,998 - INFO - automation - Initializing WebDriver
+2025-09-11 12:35:34,388 - INFO - automation - Test test_dashboard_loads_after_login PASSED
+2025-09-11 12:35:34,388 - INFO - automation - Quitting WebDriver
+2025-09-11 12:35:38,216 - INFO - automation - Initializing WebDriver
+2025-09-11 12:36:04,573 - INFO - automation - Test test_navigate_to_pim PASSED
+2025-09-11 12:36:04,576 - INFO - automation - Quitting WebDriver
+2025-09-11 12:36:07,951 - INFO - automation - Initializing WebDriver
+2025-09-11 12:36:34,115 - INFO - automation - Test test_navigate_to_leave PASSED
+2025-09-11 12:36:34,120 - INFO - automation - Quitting WebDriver
+2025-09-11 12:36:38,591 - INFO - automation - Initializing WebDriver
+2025-09-11 12:37:29,865 - ERROR - automation - Test test_assign_leave_button FAILED
+2025-09-11 12:37:30,231 - INFO - automation - Quitting WebDriver
+2025-09-11 12:57:47,941 - INFO - automation - Initializing WebDriver
+2025-09-11 12:58:32,790 - INFO - automation - Test test_assign_leave_button PASSED
+2025-09-11 12:58:32,796 - INFO - automation - Quitting WebDriver
+2025-09-11 12:59:26,936 - INFO - automation - Initializing WebDriver
+2025-09-11 12:59:47,875 - INFO - automation - Test test_dashboard_loads_after_login PASSED
+2025-09-11 12:59:47,877 - INFO - automation - Quitting WebDriver
+2025-09-11 12:59:51,560 - INFO - automation - Initializing WebDriver
+2025-09-11 13:00:19,321 - INFO - automation - Test test_navigate_to_pim PASSED
+2025-09-11 13:00:19,324 - INFO - automation - Quitting WebDriver
+2025-09-11 13:00:22,951 - INFO - automation - Initializing WebDriver
+2025-09-11 13:00:45,210 - INFO - automation - Test test_navigate_to_leave PASSED
+2025-09-11 13:00:45,215 - INFO - automation - Quitting WebDriver
+2025-09-11 13:00:48,764 - INFO - automation - Initializing WebDriver
+2025-09-11 13:01:10,449 - INFO - automation - Test test_assign_leave_button PASSED
+2025-09-11 13:01:10,453 - INFO - automation - Quitting WebDriver
+2025-09-11 13:21:26,135 - INFO - automation - Initializing WebDriver
+2025-09-11 13:21:47,650 - INFO - automation - Test test_leave_list_button PASSED
+2025-09-11 13:21:47,656 - INFO - automation - Quitting WebDriver
+2025-09-11 13:22:23,826 - INFO - automation - Initializing WebDriver
+2025-09-11 13:23:20,317 - INFO - automation - Test test_time_sheets PASSED
+2025-09-11 13:23:20,321 - INFO - automation - Quitting WebDriver
+2025-09-11 13:24:36,422 - INFO - automation - Initializing WebDriver
+2025-09-11 13:25:08,125 - INFO - automation - Test test_dashboard_loads_after_login PASSED
+2025-09-11 13:25:08,128 - INFO - automation - Quitting WebDriver
+2025-09-11 13:25:10,891 - INFO - automation - Initializing WebDriver
+2025-09-11 13:25:37,590 - INFO - automation - Test test_navigate_to_pim PASSED
+2025-09-11 13:25:37,590 - INFO - automation - Quitting WebDriver
+2025-09-11 13:25:40,265 - INFO - automation - Initializing WebDriver
+2025-09-11 13:26:16,487 - INFO - automation - Test test_navigate_to_leave PASSED
+2025-09-11 13:26:16,487 - INFO - automation - Quitting WebDriver
+2025-09-11 13:26:19,256 - INFO - automation - Initializing WebDriver
+2025-09-11 13:27:29,711 - INFO - automation - Test test_assign_leave_button PASSED
+2025-09-11 13:27:29,711 - INFO - automation - Quitting WebDriver
+2025-09-11 13:27:32,723 - INFO - automation - Initializing WebDriver
+2025-09-11 13:28:02,274 - INFO - automation - Test test_leave_list_button PASSED
+2025-09-11 13:28:02,282 - INFO - automation - Quitting WebDriver
+2025-09-11 13:28:05,021 - INFO - automation - Initializing WebDriver
+2025-09-11 13:29:19,573 - INFO - automation - Test test_time_sheets PASSED
+2025-09-11 13:29:19,573 - INFO - automation - Quitting WebDriver
+2025-09-11 14:42:27,733 - INFO - automation - Initializing WebDriver
+2025-09-11 14:43:13,605 - INFO - automation - Test test_dashboard_loads_after_login PASSED
+2025-09-11 14:43:13,613 - INFO - automation - Quitting WebDriver
+2025-09-11 14:43:16,632 - INFO - automation - Initializing WebDriver
+2025-09-11 14:43:40,475 - INFO - automation - Test test_navigate_to_pim PASSED
+2025-09-11 14:43:40,475 - INFO - automation - Quitting WebDriver
+2025-09-11 14:43:43,305 - INFO - automation - Initializing WebDriver
+2025-09-11 14:45:16,849 - INFO - automation - Test test_navigate_to_leave PASSED
+2025-09-11 14:45:16,857 - INFO - automation - Quitting WebDriver
+2025-09-11 14:45:20,942 - INFO - automation - Initializing WebDriver
+2025-09-11 14:45:49,554 - INFO - automation - Test test_assign_leave_button PASSED
+2025-09-11 14:45:49,554 - INFO - automation - Quitting WebDriver
+2025-09-11 14:45:52,379 - INFO - automation - Initializing WebDriver
+2025-09-11 14:46:14,954 - INFO - automation - Test test_leave_list_button PASSED
+2025-09-11 14:46:14,954 - INFO - automation - Quitting WebDriver
+2025-09-11 14:46:18,059 - INFO - automation - Initializing WebDriver
+2025-09-11 14:46:41,503 - INFO - automation - Test test_time_sheets PASSED
+2025-09-11 14:46:41,511 - INFO - automation - Quitting WebDriver
+2025-09-11 14:55:45,144 - INFO - automation - Initializing WebDriver
+2025-09-11 14:55:45,144 - INFO - automation - Initializing WebDriver
+2025-09-11 14:56:32,260 - INFO - automation - Test test_dashboard_loads_after_login PASSED
+2025-09-11 14:56:32,260 - INFO - automation - Quitting WebDriver
+2025-09-11 14:56:34,802 - INFO - automation - Test test_leave_list_button PASSED
+2025-09-11 14:56:34,810 - INFO - automation - Quitting WebDriver
+2025-09-11 14:56:34,858 - INFO - automation - Test test_navigate_to_leave PASSED
+2025-09-11 14:56:34,866 - INFO - automation - Quitting WebDriver
+2025-09-11 14:56:37,679 - INFO - automation - Initializing WebDriver
+2025-09-11 14:56:57,135 - INFO - automation - Initializing WebDriver
+2025-09-11 14:57:01,711 - INFO - automation - Initializing WebDriver
+2025-09-11 14:57:46,835 - INFO - automation - Test test_time_sheets PASSED
+2025-09-11 14:57:46,843 - INFO - automation - Quitting WebDriver
+2025-09-11 14:57:48,243 - INFO - automation - Test test_navigate_to_pim PASSED
+2025-09-11 14:57:48,251 - INFO - automation - Quitting WebDriver
+2025-09-11 14:57:49,443 - ERROR - automation - Test test_assign_leave_button FAILED
+2025-09-11 14:57:50,242 - INFO - automation - Quitting WebDriver
+2025-09-11 15:10:51,274 - INFO - automation - Initializing WebDriver
+2025-09-11 15:11:13,529 - INFO - automation - Test test_dashboard_loads_after_login PASSED
+2025-09-11 15:11:13,529 - INFO - automation - Quitting WebDriver
+2025-09-11 15:11:16,445 - INFO - automation - Initializing WebDriver
+2025-09-11 15:11:37,148 - INFO - automation - Test test_navigate_to_pim PASSED
+2025-09-11 15:11:37,156 - INFO - automation - Quitting WebDriver
+2025-09-11 15:11:39,955 - INFO - automation - Initializing WebDriver
+2025-09-11 15:12:02,710 - INFO - automation - Test test_navigate_to_leave PASSED
+2025-09-11 15:12:02,718 - INFO - automation - Quitting WebDriver
+2025-09-11 15:12:05,505 - INFO - automation - Initializing WebDriver
+2025-09-11 15:12:27,000 - ERROR - automation - Test test_assign_leave_button FAILED
+2025-09-11 15:12:28,070 - INFO - automation - Quitting WebDriver
+2025-09-11 15:12:31,242 - INFO - automation - Initializing WebDriver
+2025-09-11 15:12:51,504 - INFO - automation - Test test_leave_list_button PASSED
+2025-09-11 15:12:51,504 - INFO - automation - Quitting WebDriver
+2025-09-11 15:12:54,461 - INFO - automation - Initializing WebDriver
+2025-09-11 15:13:16,437 - INFO - automation - Test test_time_sheets PASSED
+2025-09-11 15:13:16,445 - INFO - automation - Quitting WebDriver
+2025-09-11 15:13:19,284 - INFO - automation - Initializing WebDriver
+2025-09-11 15:13:39,382 - INFO - automation - Test test_login[Admin-admin123-success] PASSED
+2025-09-11 15:13:39,438 - INFO - automation - Quitting WebDriver
+2025-09-11 15:13:42,401 - INFO - automation - Initializing WebDriver
+2025-09-11 15:14:08,912 - INFO - automation - Test test_login[invaliduser-admin123-failure] PASSED
+2025-09-11 15:14:08,943 - INFO - automation - Quitting WebDriver
+2025-09-11 15:14:11,912 - INFO - automation - Initializing WebDriver
+2025-09-11 15:14:36,079 - INFO - automation - Test test_login[admin-wrongpass-failure] PASSED
+2025-09-11 15:14:36,126 - INFO - automation - Quitting WebDriver
+2025-09-11 15:14:42,037 - INFO - automation - Initializing WebDriver
+2025-09-11 15:15:07,418 - INFO - automation - Test test_login[testuser-test123-failure] PASSED
+2025-09-11 15:15:07,450 - INFO - automation - Quitting WebDriver
+2025-09-11 15:15:10,481 - INFO - automation - Initializing WebDriver
+2025-09-11 15:15:34,008 - INFO - automation - Test test_login[-admin123-failure] PASSED
+2025-09-11 15:15:34,070 - INFO - automation - Quitting WebDriver
+2025-09-11 15:15:37,039 - INFO - automation - Initializing WebDriver
+2025-09-11 15:16:00,751 - INFO - automation - Test test_login[admin--failure] PASSED
+2025-09-11 15:16:00,813 - INFO - automation - Quitting WebDriver
+2025-09-11 15:20:47,457 - INFO - automation - Initializing WebDriver
+2025-09-11 15:21:10,225 - ERROR - automation - Test test_dashboard_loads_after_login FAILED
+2025-09-11 15:21:11,008 - ERROR - automation - Could not capture screenshot: [Errno 2] No such file or directory: 'C:\\MIRZA\\Users\\MIRZAS\\selenium_parallel_project\\reports\\allure-results\\0fffc5b4-dc00-4ece-bfd1-5869164f3bba-attachment.png'
+2025-09-11 15:21:11,024 - ERROR - automation - Could not attach log file: [Errno 2] No such file or directory: 'C:\\MIRZA\\Users\\MIRZAS\\selenium_parallel_project\\reports\\allure-results\\764e1e1e-1fc2-42be-bf19-1e58cee00758-attachment.txt'
+2025-09-11 15:21:11,028 - INFO - automation - Quitting WebDriver
+2025-09-11 15:21:37,941 - INFO - automation - Initializing WebDriver
+2025-09-11 15:21:58,943 - INFO - automation - Test test_dashboard_loads_after_login PASSED
+2025-09-11 15:21:58,946 - INFO - automation - Quitting WebDriver
+2025-09-11 15:22:01,747 - INFO - automation - Initializing WebDriver
+2025-09-11 15:22:24,365 - INFO - automation - Test test_navigate_to_pim PASSED
+2025-09-11 15:22:24,368 - INFO - automation - Quitting WebDriver
+2025-09-11 15:22:27,293 - INFO - automation - Initializing WebDriver
+2025-09-11 15:22:49,830 - INFO - automation - Test test_navigate_to_leave PASSED
+2025-09-11 15:22:49,832 - INFO - automation - Quitting WebDriver
+2025-09-11 15:22:52,803 - INFO - automation - Initializing WebDriver
+2025-09-11 15:23:16,630 - ERROR - automation - Test test_assign_leave_button FAILED
+2025-09-11 15:23:17,766 - INFO - automation - Quitting WebDriver
+2025-09-11 15:23:20,828 - INFO - automation - Initializing WebDriver
+2025-09-11 15:23:42,456 - INFO - automation - Test test_leave_list_button PASSED
+2025-09-11 15:23:42,457 - INFO - automation - Quitting WebDriver
+2025-09-11 15:23:45,281 - INFO - automation - Initializing WebDriver
+2025-09-11 15:24:07,778 - INFO - automation - Test test_time_sheets PASSED
+2025-09-11 15:24:07,782 - INFO - automation - Quitting WebDriver
+2025-09-11 15:24:10,625 - INFO - automation - Initializing WebDriver
+2025-09-11 15:24:30,945 - INFO - automation - Test test_login[Admin-admin123-success] PASSED
+2025-09-11 15:24:31,027 - INFO - automation - Quitting WebDriver
+2025-09-11 15:24:33,846 - INFO - automation - Initializing WebDriver
+2025-09-11 15:25:00,178 - INFO - automation - Test test_login[invaliduser-admin123-failure] PASSED
+2025-09-11 15:25:00,271 - INFO - automation - Quitting WebDriver
+2025-09-11 15:25:03,400 - INFO - automation - Initializing WebDriver
+2025-09-11 15:25:53,124 - ERROR - automation - Test test_login[admin-wrongpass-failure] FAILED
+2025-09-11 15:25:53,447 - INFO - automation - Quitting WebDriver
+2025-09-11 15:25:56,541 - INFO - automation - Initializing WebDriver
+2025-09-11 15:26:40,576 - INFO - automation - Test test_login[testuser-test123-failure] PASSED
+2025-09-11 15:26:40,638 - INFO - automation - Quitting WebDriver
+2025-09-11 15:26:43,676 - INFO - automation - Initializing WebDriver
+2025-09-11 15:27:16,192 - INFO - automation - Test test_login[-admin123-failure] PASSED
+2025-09-11 15:27:16,223 - INFO - automation - Quitting WebDriver
+2025-09-11 15:27:19,192 - INFO - automation - Initializing WebDriver
+2025-09-11 15:28:20,076 - INFO - automation - Test test_login[admin--failure] PASSED
+2025-09-11 15:28:20,108 - INFO - automation - Quitting WebDriver
+2025-09-11 15:51:05,025 - INFO - automation - Initializing WebDriver
+2025-09-11 15:51:31,062 - ERROR - automation - Test test_dashboard_loads_after_login FAILED
+2025-09-11 15:51:31,595 - ERROR - automation - Could not capture screenshot: [Errno 2] No such file or directory: 'C:\\MIRZA\\Users\\MIRZAS\\selenium_parallel_project\\reports\\allure-results\\79472479-7c60-41f6-aaa9-05a680e76cd4-attachment.png'
+2025-09-11 15:51:31,624 - ERROR - automation - Could not attach log file: [Errno 2] No such file or directory: 'C:\\MIRZA\\Users\\MIRZAS\\selenium_parallel_project\\reports\\allure-results\\6c49c84e-df4d-48bc-80eb-8778e9bd1479-attachment.txt'
+2025-09-11 15:51:31,626 - INFO - automation - Quitting WebDriver
+2025-09-11 15:52:59,888 - INFO - automation - Initializing WebDriver
+2025-09-11 15:53:21,782 - INFO - automation - Test test_dashboard_loads_after_login PASSED
+2025-09-11 15:53:21,782 - INFO - automation - Quitting WebDriver
+2025-09-11 15:53:24,689 - INFO - automation - Initializing WebDriver
+2025-09-11 15:53:47,235 - INFO - automation - Test test_navigate_to_pim PASSED
+2025-09-11 15:53:47,238 - INFO - automation - Quitting WebDriver
+2025-09-11 15:53:50,170 - INFO - automation - Initializing WebDriver
+2025-09-11 15:54:13,843 - INFO - automation - Test test_navigate_to_leave PASSED
+2025-09-11 15:54:13,845 - INFO - automation - Quitting WebDriver
+2025-09-11 15:54:16,480 - INFO - automation - Initializing WebDriver
+2025-09-11 15:54:40,346 - ERROR - automation - Test test_assign_leave_button FAILED
+2025-09-11 15:54:41,623 - INFO - automation - Quitting WebDriver
+2025-09-11 15:54:44,406 - INFO - automation - Initializing WebDriver
+2025-09-11 15:55:07,226 - INFO - automation - Test test_leave_list_button PASSED
+2025-09-11 15:55:07,245 - INFO - automation - Quitting WebDriver
+2025-09-11 15:55:10,568 - INFO - automation - Initializing WebDriver
+2025-09-11 15:55:32,807 - INFO - automation - Test test_time_sheets PASSED
+2025-09-11 15:55:32,811 - INFO - automation - Quitting WebDriver
+2025-09-11 15:55:35,555 - INFO - automation - Initializing WebDriver
+2025-09-11 15:56:03,784 - INFO - automation - Test test_login[Admin-admin123-success] PASSED
+2025-09-11 15:56:03,821 - INFO - automation - Quitting WebDriver
+2025-09-11 15:56:06,736 - INFO - automation - Initializing WebDriver
+2025-09-11 15:56:32,110 - INFO - automation - Test test_login[invaliduser-admin123-failure] PASSED
+2025-09-11 15:56:32,157 - INFO - automation - Quitting WebDriver
+2025-09-11 15:56:35,944 - INFO - automation - Initializing WebDriver
+2025-09-11 15:57:28,102 - INFO - automation - Test test_login[admin-wrongpass-failure] PASSED
+2025-09-11 15:57:28,133 - INFO - automation - Quitting WebDriver
+2025-09-11 15:57:30,960 - INFO - automation - Initializing WebDriver
+2025-09-11 15:57:55,778 - INFO - automation - Test test_login[testuser-test123-failure] PASSED
+2025-09-11 15:57:55,809 - INFO - automation - Quitting WebDriver
+2025-09-11 15:57:58,528 - INFO - automation - Initializing WebDriver
+2025-09-11 15:58:23,801 - INFO - automation - Test test_login[-admin123-failure] PASSED
+2025-09-11 15:58:23,894 - INFO - automation - Quitting WebDriver
+2025-09-11 15:58:27,568 - INFO - automation - Initializing WebDriver
+2025-09-11 15:58:52,725 - INFO - automation - Test test_login[admin--failure] PASSED
+2025-09-11 15:58:52,803 - INFO - automation - Quitting WebDriver
+2025-09-11 19:10:53,581 - INFO - automation - Initializing WebDriver
+2025-09-11 19:11:40,518 - INFO - automation - Test test_dashboard_loads_after_login PASSED
+2025-09-11 19:11:40,518 - INFO - automation - Quitting WebDriver
+2025-09-11 19:11:43,470 - INFO - automation - Initializing WebDriver
+2025-09-11 19:12:05,192 - INFO - automation - Test test_navigate_to_pim PASSED
+2025-09-11 19:12:05,200 - INFO - automation - Quitting WebDriver
+2025-09-11 19:12:08,109 - INFO - automation - Initializing WebDriver
+2025-09-11 19:12:30,256 - INFO - automation - Test test_navigate_to_leave PASSED
+2025-09-11 19:12:30,256 - INFO - automation - Quitting WebDriver
+2025-09-11 19:12:33,161 - INFO - automation - Initializing WebDriver
+2025-09-11 19:12:56,820 - ERROR - automation - Test test_assign_leave_button FAILED

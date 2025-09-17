@@ -1,0 +1,4 @@
+2025-09-15 15:57:49,177 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-15 15:57:50,974 - INFO - pages.admin_page - Opened Admin Tab
+2025-09-15 15:57:53,167 - INFO - pages.admin_page - Clicked Add button
+2025-09-15 15:57:56,719 - INFO - pages.admin_page - Added new user test_admin1

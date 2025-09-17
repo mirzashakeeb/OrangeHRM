@@ -1,0 +1,19 @@
+2025-09-17 13:16:14,992 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-17 13:16:21,391 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-17 13:16:23,851 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-17 13:16:24,361 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-17 13:16:24,472 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-17 13:16:24,791 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-17 13:16:24,904 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-17 13:16:28,767 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-17 13:16:31,358 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-17 13:16:31,864 - INFO - pages.base_page - Locating element: ('xpath', "//span[text()='Admin']")
+2025-09-17 13:16:31,943 - INFO - pages.base_page - Clicking element: ('xpath', "//span[text()='Admin']")
+2025-09-17 13:16:33,188 - INFO - pages.admin_page - Opened Admin Tab
+2025-09-17 13:16:33,191 - INFO - pages.base_page - Locating element: ('xpath', "//button[normalize-space()='Add']")
+2025-09-17 13:16:34,341 - INFO - pages.base_page - Clicking element: ('xpath', "//button[normalize-space()='Add']")
+2025-09-17 13:16:36,812 - INFO - pages.admin_page - Clicked Add button and Add User form loaded
+2025-09-17 13:16:36,815 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='User Role']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-17 13:16:37,217 - INFO - pages.base_page - Opened dropdown: ('xpath', "//label[text()='User Role']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-17 13:16:37,442 - INFO - pages.base_page - Selected option: Admin
+2025-09-17 13:16:37,445 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='Employee Name']/../following-sibling::div//input")

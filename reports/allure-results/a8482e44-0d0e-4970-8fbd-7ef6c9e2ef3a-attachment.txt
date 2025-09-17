@@ -1,0 +1,6 @@
+[32mINFO    [0m automation:conftest.py:26 Initializing WebDriver
+[32mINFO    [0m pages.base_page:base_page.py:18 Opening URL: https://opensource-demo.orangehrmlive.com/
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('name', 'username')
+[31m[1mERROR   [0m pages.base_page:base_page.py:35 Element not found: ('name', 'username')
+[31m[1mERROR   [0m pages.base_page:base_page.py:47 Screenshot saved at: screenshots/username_not_found.png
+[32mINFO    [0m automation:conftest.py:29 Quitting WebDriver
