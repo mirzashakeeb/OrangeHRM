@@ -19,6 +19,7 @@ jobs:
         with:
           python-version: "3.11"
 
+      # Install Chrome
       - name: Install Chrome
         run: |
           sudo apt-get update
@@ -28,17 +29,28 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
 
+      # Install ChromeDriver
+      - name: Install ChromeDriver
+        uses: nanasess/setup-chromedriver@v2
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # Run tests and save JUnit XML for summary
       - name: Run tests
         run: |
           mkdir -p reports/allure-results
           mkdir -p reports
-          pytest -n 4 --alluredir=reports/allure-results --html=reports/test_report.html --self-contained-html --continue-on-collection-errors || true
+          pytest -n 4 \
+            --alluredir=reports/allure-results \
+            --html=reports/test_report.html \
+            --self-contained-html \
+            --junitxml=reports/junit.xml \
+            -q --disable-warnings || true
 
+      # Upload pytest HTML report
       - name: Upload Pytest HTML report
         if: always()
         uses: actions/upload-artifact@v4
@@ -46,15 +58,24 @@ jobs:
           name: pytest-html-report
           path: reports/test_report.html
 
+      # Generate Allure report
       - name: Generate Allure HTML Report
         if: always()
         run: |
           pip install allure-python-commons
           allure generate reports/allure-results -o reports/allure-report --clean || true
 
+      # Upload Allure report
       - name: Upload Allure HTML Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-report
           path: reports/allure-report
+
+      # ✅ Publish test summary in GitHub Actions UI
+      - name: Pytest Summary
+        if: always()
+        uses: test-summary/action@v2
+        with:
+          paths: reports/junit.xml
