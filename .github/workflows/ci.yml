@@ -1,4 +1,4 @@
-name: Selenium Parallel Tests
+name: Selenium Single Test
 
 on:
   push:
@@ -21,7 +21,16 @@ jobs:
         with:
           python-version: "3.11"
 
-      # 3️⃣ Install Chrome
+      # 3️⃣ Cache pip packages
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # 4️⃣ Install Chrome
       - name: Install Chrome
         run: |
           sudo apt-get update
@@ -31,29 +40,29 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
 
-      # 4️⃣ Install ChromeDriver
+      # 5️⃣ Install ChromeDriver
       - name: Install ChromeDriver
         uses: nanasess/setup-chromedriver@v2
 
-      # 5️⃣ Install Python dependencies
+      # 6️⃣ Install Python dependencies
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # 6️⃣ Run pytest with parallel tests, Allure, HTML, and JUnit reports
+      # 7️⃣ Run tests (single instance)
       - name: Run tests
         run: |
           mkdir -p reports/allure-results
           mkdir -p reports
-          pytest -n 4 \
+          pytest \
             --alluredir=reports/allure-results \
             --html=reports/test_report.html \
             --self-contained-html \
             --junitxml=reports/junit.xml \
             -q --disable-warnings || true
 
-      # 7️⃣ Upload pytest HTML report
+      # 8️⃣ Upload Pytest HTML report
       - name: Upload Pytest HTML report
         if: always()
         uses: actions/upload-artifact@v4
@@ -61,14 +70,14 @@ jobs:
           name: pytest-html-report
           path: reports/test_report.html
 
-      # 8️⃣ Generate Allure HTML Report
+      # 9️⃣ Generate Allure HTML Report
       - name: Generate Allure HTML Report
         if: always()
         run: |
           pip install allure-python-commons
           allure generate reports/allure-results -o reports/allure-report --clean || true
 
-      # 9️⃣ Upload Allure report
+      # 🔟 Upload Allure report
       - name: Upload Allure HTML Report
         if: always()
         uses: actions/upload-artifact@v4
@@ -76,7 +85,7 @@ jobs:
           name: allure-report
           path: reports/allure-report
 
-      # 🔟 Publish test summary in GitHub Actions UI
+      # 1️⃣1️⃣ Publish test summary in GitHub Actions UI
       - name: Pytest Summary
         if: always()
         uses: test-summary/action@v2
