@@ -11,17 +11,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout code
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2️⃣ Setup Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # 3️⃣ Cache pip packages
       - name: Cache pip
         uses: actions/cache@v3
         with:
@@ -30,7 +27,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
 
-      # 4️⃣ Install Chrome
       - name: Install Chrome
         run: |
           sudo apt-get update
@@ -40,19 +36,16 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
 
-       # 5️⃣ Install ChromeDriver 109 (matches your Chrome)
-      - name: Install ChromeDriver
-        run: |
-          pip install webdriver-manager
-          python -c "from webdriver_manager.chrome import ChromeDriverManager; ChromeDriverManager(driver_version='109.0.5414.74').install()"
-
-      # 6️⃣ Install Python dependencies
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # 7️⃣ Run tests (single instance)
+      - name: Check Chrome and ChromeDriver versions
+        run: |
+          google-chrome --version
+          python -c "from webdriver_manager.chrome import ChromeDriverManager; print('ChromeDriver:', ChromeDriverManager().install())"
+
       - name: Run tests
         run: |
           mkdir -p reports/allure-results
@@ -64,22 +57,19 @@ jobs:
             --junitxml=reports/junit.xml \
             -q --disable-warnings || true
 
-      # 8️⃣ Upload Pytest HTML report
-      - name: Upload Pytest HTML report
+      - name: Upload pytest HTML report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: pytest-html-report
           path: reports/test_report.html
 
-      # 9️⃣ Generate Allure HTML Report
       - name: Generate Allure HTML Report
         if: always()
         run: |
           pip install allure-python-commons
           allure generate reports/allure-results -o reports/allure-report --clean || true
 
-      # 🔟 Upload Allure report
       - name: Upload Allure HTML Report
         if: always()
         uses: actions/upload-artifact@v4
@@ -87,7 +77,6 @@ jobs:
           name: allure-report
           path: reports/allure-report
 
-      # 1️⃣1️⃣ Publish test summary in GitHub Actions UI
       - name: Pytest Summary
         if: always()
         uses: test-summary/action@v2
