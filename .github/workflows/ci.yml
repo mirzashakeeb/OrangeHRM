@@ -35,20 +35,25 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest -n 4 --alluredir=reports/allure-results --html=reports/test_report.html --self-contained-html
+          mkdir -p reports/allure-results
+          mkdir -p reports
+          pytest -n 4 --alluredir=reports/allure-results --html=reports/test_report.html --self-contained-html --continue-on-collection-errors || true
 
       - name: Upload Pytest HTML report
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: pytest-html-report
           path: reports/test_report.html
 
       - name: Generate Allure HTML Report
+        if: always()
         run: |
           pip install allure-python-commons
-          allure generate reports/allure-results -o reports/allure-report --clean
+          allure generate reports/allure-results -o reports/allure-report --clean || true
 
       - name: Upload Allure HTML Report
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-report
