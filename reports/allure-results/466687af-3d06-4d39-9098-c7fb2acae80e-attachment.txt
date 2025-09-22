@@ -1,0 +1,2 @@
+2025-09-22 11:42:34,469 - INFO - automation - Initializing WebDriver
+2025-09-22 11:43:36,132 - ERROR - automation - Test test_delete_existing_user FAILED

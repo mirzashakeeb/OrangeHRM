@@ -1,0 +1,13 @@
+[32mINFO    [0m automation:conftest.py:26 Initializing WebDriver
+[32mINFO    [0m pages.base_page:base_page.py:18 Opening URL: https://opensource-demo.orangehrmlive.com/
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('name', 'username')
+[32mINFO    [0m pages.base_page:base_page.py:54 Typing into element ('name', 'username'): Admin
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('name', 'password')
+[32mINFO    [0m pages.base_page:base_page.py:54 Typing into element ('name', 'password'): ********
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('xpath', "//button[@type='submit']")
+[32mINFO    [0m pages.base_page:base_page.py:61 Clicking element: ('xpath', "//button[@type='submit']")
+[32mINFO    [0m pages.login_page:login_page.py:36 Login successful – Dashboard loaded
+[32mINFO    [0m pages.dashboard_page:dashboard_page.py:35 Dashboard is loaded
+[32mINFO    [0m pages.admin_page:admin_page.py:48 Opened Admin Tab
+[32mINFO    [0m pages.admin_page:admin_page.py:178 Searched for user: mirza
+[32mINFO    [0m automation:conftest.py:29 Quitting WebDriver

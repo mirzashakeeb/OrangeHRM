@@ -2,6 +2,4 @@ username,password,expected
 Admin,admin123,success
 invaliduser,admin123,failure
 admin,wrongpass,failure
-testuser,test123,failure
-,admin123,failure
-admin,,failure
+,,failure

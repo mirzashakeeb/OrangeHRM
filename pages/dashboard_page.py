@@ -18,9 +18,12 @@ class DashboardPage(BasePage):
         self.leave_module = (By.XPATH, "//span[text()='Leave']")
         self.recruitment_module = (By.XPATH, "//span[text()='Recruitment']")
         self.assign_leave = (By.XPATH, "//button[@title='Assign Leave']")
-        self.leave_list = (By.XPATH,"//button[@title='Leave List']")
-        self.time_sheets = (By.XPATH,"//button[@title='Timesheets']")
-        self.apply_leave = (By.XPATH,"//button[@title='Apply Leave']")
+        self.leave_list = (By.XPATH, "//button[@title='Leave List']")
+        self.time_sheets = (By.XPATH, "//button[@title='Timesheets']")
+        self.apply_leave = (By.XPATH, "//button[@title='Apply Leave']")
+        # Logout locators
+        self.user_dropdown = (By.CLASS_NAME,"oxd-userdropdown-img")
+        self.logout_link = (By.XPATH, "//a[text()='Logout']")
 
     @allure.step("Validate Dashboard is loaded")
     def is_dashboard_loaded(self):
@@ -75,3 +78,26 @@ class DashboardPage(BasePage):
     def click_apply_leave(self):
         self.click(self.apply_leave)
         logger.info("Clicked Apply Leave from Quick Launch")
+
+    @allure.step("Perform Logout")
+    def logout(self):
+        """Click user dropdown → Logout"""
+        try:
+            WebDriverWait(self.driver, 10).until(
+                EC.element_to_be_clickable(self.user_dropdown)
+            ).click()
+
+            WebDriverWait(self.driver, 10).until(
+                EC.element_to_be_clickable(self.logout_link)
+            ).click()
+
+            logger.info("Logout successful")
+            allure.attach(self.driver.get_screenshot_as_png(),
+                          name="logout_success",
+                          attachment_type=allure.attachment_type.PNG)
+        except TimeoutException:
+            logger.error("Logout failed – elements not found")
+            allure.attach(self.driver.get_screenshot_as_png(),
+                          name="logout_failure",
+                          attachment_type=allure.attachment_type.PNG)
+            raise

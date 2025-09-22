@@ -1,0 +1,26 @@
+2025-09-18 15:38:16,177 - INFO - automation - Initializing WebDriver
+2025-09-18 15:39:23,876 - INFO - automation - Test test_search_existing_user PASSED
+2025-09-18 15:39:23,876 - INFO - automation - Quitting WebDriver
+2025-09-18 15:40:25,834 - INFO - automation - Initializing WebDriver
+2025-09-18 15:41:34,810 - INFO - automation - Test test_search_existing_user PASSED
+2025-09-18 15:41:34,810 - INFO - automation - Quitting WebDriver
+2025-09-18 15:48:20,999 - INFO - automation - Initializing WebDriver
+2025-09-18 15:49:08,505 - ERROR - automation - Test test_edit_existing_user FAILED
+2025-09-18 15:49:08,939 - INFO - automation - Quitting WebDriver
+2025-09-18 15:50:44,545 - INFO - automation - Initializing WebDriver
+2025-09-18 15:51:50,443 - ERROR - automation - Test test_edit_existing_user FAILED
+2025-09-18 15:51:50,890 - INFO - automation - Quitting WebDriver
+2025-09-18 15:59:23,865 - INFO - automation - Initializing WebDriver
+2025-09-18 15:59:50,791 - ERROR - automation - Test test_edit_existing_user FAILED
+2025-09-18 15:59:51,255 - INFO - automation - Quitting WebDriver
+2025-09-18 16:00:49,675 - INFO - automation - Initializing WebDriver
+2025-09-18 16:01:15,565 - ERROR - automation - Test test_edit_existing_user FAILED
+2025-09-18 16:01:15,992 - INFO - automation - Quitting WebDriver
+2025-09-18 16:38:50,435 - INFO - automation - Initializing WebDriver
+2025-09-18 16:39:28,907 - ERROR - automation - Test test_add_user FAILED
+2025-09-18 16:39:29,425 - INFO - automation - Quitting WebDriver
+2025-09-18 16:39:34,297 - INFO - automation - Initializing WebDriver
+2025-09-18 16:40:06,572 - INFO - automation - Test test_search_existing_user PASSED
+2025-09-18 16:40:06,575 - INFO - automation - Quitting WebDriver
+2025-09-18 16:40:10,558 - INFO - automation - Initializing WebDriver
+2025-09-18 16:41:03,832 - ERROR - automation - Test test_edit_existing_user FAILED

@@ -1,0 +1,59 @@
+2025-09-22 11:42:34,469 - INFO - automation - Initializing WebDriver
+2025-09-22 11:43:36,132 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 11:43:36,626 - INFO - automation - Quitting WebDriver
+2025-09-22 11:49:54,738 - INFO - automation - Initializing WebDriver
+2025-09-22 11:50:23,236 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 11:50:23,746 - INFO - automation - Quitting WebDriver
+2025-09-22 11:50:35,386 - INFO - automation - Initializing WebDriver
+2025-09-22 11:51:03,401 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 11:51:03,959 - INFO - automation - Quitting WebDriver
+2025-09-22 11:53:00,780 - INFO - automation - Initializing WebDriver
+2025-09-22 11:53:27,664 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 11:53:28,110 - INFO - automation - Quitting WebDriver
+2025-09-22 11:55:49,226 - INFO - automation - Initializing WebDriver
+2025-09-22 11:56:16,778 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 11:56:17,211 - INFO - automation - Quitting WebDriver
+2025-09-22 11:57:44,881 - INFO - automation - Initializing WebDriver
+2025-09-22 11:58:13,549 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 11:58:14,012 - INFO - automation - Quitting WebDriver
+2025-09-22 12:00:31,349 - INFO - automation - Initializing WebDriver
+2025-09-22 12:00:59,455 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:00:59,924 - INFO - automation - Quitting WebDriver
+2025-09-22 12:02:12,647 - INFO - automation - Initializing WebDriver
+2025-09-22 12:02:41,305 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:02:41,780 - INFO - automation - Quitting WebDriver
+2025-09-22 12:02:54,481 - INFO - automation - Initializing WebDriver
+2025-09-22 12:03:25,763 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:03:26,511 - INFO - automation - Quitting WebDriver
+2025-09-22 12:05:44,981 - INFO - automation - Initializing WebDriver
+2025-09-22 12:06:15,347 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:06:15,898 - INFO - automation - Quitting WebDriver
+2025-09-22 12:06:28,843 - INFO - automation - Initializing WebDriver
+2025-09-22 12:06:57,602 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:06:58,081 - INFO - automation - Quitting WebDriver
+2025-09-22 12:07:10,996 - INFO - automation - Initializing WebDriver
+2025-09-22 12:07:43,213 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:07:43,720 - INFO - automation - Quitting WebDriver
+2025-09-22 12:14:51,344 - INFO - automation - Initializing WebDriver
+2025-09-22 12:15:17,953 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:15:18,398 - INFO - automation - Quitting WebDriver
+2025-09-22 12:20:26,647 - INFO - automation - Initializing WebDriver
+2025-09-22 12:20:52,818 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:20:53,326 - INFO - automation - Quitting WebDriver
+2025-09-22 12:30:47,324 - INFO - automation - Initializing WebDriver
+2025-09-22 12:31:12,933 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:31:13,463 - INFO - automation - Quitting WebDriver
+2025-09-22 12:33:24,060 - INFO - automation - Initializing WebDriver
+2025-09-22 12:33:50,583 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:33:51,071 - INFO - automation - Quitting WebDriver
+2025-09-22 12:36:19,987 - INFO - automation - Initializing WebDriver
+2025-09-22 12:36:46,465 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:36:46,947 - INFO - automation - Quitting WebDriver
+2025-09-22 12:41:30,058 - INFO - automation - Initializing WebDriver
+2025-09-22 12:42:08,324 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:42:08,941 - INFO - automation - Quitting WebDriver
+2025-09-22 12:52:16,334 - INFO - automation - Initializing WebDriver
+2025-09-22 12:52:54,910 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:52:55,601 - INFO - automation - Quitting WebDriver
+2025-09-22 12:53:19,178 - INFO - automation - Initializing WebDriver
+2025-09-22 12:53:45,579 - ERROR - automation - Test test_delete_existing_user FAILED

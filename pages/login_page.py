@@ -57,3 +57,15 @@ class LoginPage(BasePage):
                           name="login_unknown_failure",
                           attachment_type=allure.attachment_type.PNG)
             return "failure"
+
+    @allure.step("Verify if login page is displayed")
+    def is_login_page_displayed(self):
+        try:
+            WebDriverWait(self.driver, 5).until(
+                EC.visibility_of_element_located(self.login_btn)
+            )
+            logger.info("Login page is displayed")
+            return True
+        except TimeoutException:
+            logger.error("Login page not displayed")
+            return False

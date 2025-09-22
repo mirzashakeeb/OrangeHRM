@@ -1,11 +1,13 @@
 import allure
-from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from pages.base_page import BasePage
+from pages.dashboard_page import DashboardPage
+from pages.login_page import LoginPage
 from utils.logger import get_logger
-import re
+import time
 
 logger = get_logger(__name__)
 
@@ -19,22 +21,24 @@ class AdminPage(BasePage):
         self.user_role_dropdown = (By.XPATH, "//label[text()='User Role']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
         self.employee_name_field = (By.XPATH, "//label[text()='Employee Name']/../following-sibling::div//input")
         self.status_dropdown = (By.XPATH, "//label[text()='Status']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+        self.existing_user = (By.XPATH,"//i[@class='oxd-icon bi-caret-down-fill']")
         self.search_button = (By.XPATH, "//button[normalize-space()='Search']")
         self.reset_button = (By.XPATH, "//button[normalize-space()='Reset']")
         self.add_button = (By.XPATH, "//button[normalize-space()='Add']")
         self.delete_button = (By.XPATH, "//button[normalize-space()='Delete Selected']")
 
         # --- Add User form locators ---
-        self.add_user_role = (By.XPATH, "//label[text()='User Role']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
-        self.add_employee_name = (By.XPATH, "//label[text()='Employee Name']/../following-sibling::div//input")
-        self.add_username = (By.XPATH, "//label[text()='Username']/../following-sibling::div//input")
-        self.add_status = (By.XPATH, "//label[text()='Status']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+        self.add_user_role = self.user_role_dropdown
+        self.add_employee_name = self.employee_name_field
+        self.add_username = self.username_field
+        self.add_status = self.status_dropdown
         self.add_password = (By.XPATH, "(//input[@type='password'])[1]")
         self.add_confirm_password = (By.XPATH, "(//input[@type='password'])[2]")
         self.save_button = (By.XPATH, "//button[normalize-space()='Save']")
 
         # --- Validation locators ---
         self.success_message = (By.XPATH, "//div[contains(@class,'oxd-toast--success')]")
+        self.loader = (By.CSS_SELECTOR, "div.oxd-form-loader")
 
     @allure.step("Open Admin Tab")
     def open_admin_tab(self):
@@ -43,32 +47,8 @@ class AdminPage(BasePage):
         ).click()
         logger.info("Opened Admin Tab")
 
-    @allure.step("Search user: {username}")
-    def search_user(self, username="", role=None, emp_name="", status=None):
-        if username:
-            WebDriverWait(self.driver, self.timeout).until(
-                EC.visibility_of_element_located(self.username_field)
-            ).send_keys(username)
-        if role:
-            self.select_dropdown(self.user_role_dropdown, role)
-        if emp_name:
-            WebDriverWait(self.driver, self.timeout).until(
-                EC.visibility_of_element_located(self.employee_name_field)
-            ).send_keys(emp_name)
-        if status:
-            self.select_dropdown(self.status_dropdown, status)
 
-        WebDriverWait(self.driver, self.timeout).until(
-            EC.element_to_be_clickable(self.search_button)
-        ).click()
-        logger.info(f"Searched user with Username={username}, Role={role}, Employee={emp_name}, Status={status}")
-
-    @allure.step("Reset search filters")
-    def reset_search(self):
-        WebDriverWait(self.driver, self.timeout).until(
-            EC.element_to_be_clickable(self.reset_button)
-        ).click()
-        logger.info("Reset search filters")
+    # ---------------- ADD USER ----------------
 
     @allure.step("Click Add User button")
     def click_add_button(self):
@@ -84,42 +64,27 @@ class AdminPage(BasePage):
     def add_new_user(self, role, emp_name, username, status, password):
         self.select_dropdown(self.add_user_role, role)
 
-        # Employee Name input
+        # Employee autocomplete handling
         emp_input = WebDriverWait(self.driver, self.timeout).until(
             EC.visibility_of_element_located(self.add_employee_name)
         )
         emp_input.clear()
         emp_input.send_keys(emp_name)
 
-        # Wait for suggestions container
-        suggestion_container = (By.XPATH, "//div[@role='listbox']")
+        # Wait for loader to disappear if any
         WebDriverWait(self.driver, self.timeout).until(
-            EC.visibility_of_element_located(suggestion_container)
+            EC.invisibility_of_element_located(self.loader)
         )
 
-        # Normalize helper
-        def normalize(text):
-            return re.sub(r"\s+", " ", text.strip().lower())
-
-        normalized_emp = normalize(emp_name)
-
-        # Get all suggestions and select
-        suggestions = WebDriverWait(self.driver, self.timeout).until(
-            EC.presence_of_all_elements_located((By.XPATH, "//div[@role='listbox']//span"))
+        # Wait for the first suggestion and click it
+        first_suggestion_xpath = "//div[@role='listbox']//span[1]"
+        first_suggestion = WebDriverWait(self.driver, self.timeout).until(
+            EC.element_to_be_clickable((By.XPATH, first_suggestion_xpath))
         )
-        matched = False
-        for sug in suggestions:
-            normalized_sug = normalize(sug.text)
-            if normalized_emp == normalized_sug or normalized_emp in normalized_sug:
-                self.driver.execute_script("arguments[0].click();", sug)
-                matched = True
-                logger.info(f"Selected employee: {sug.text.strip()}")
-                break
+        first_suggestion.click()
+        logger.info(f"Selected first employee suggestion for '{emp_name}'")
 
-        if not matched:
-            raise Exception(f"Employee '{emp_name}' not found in suggestions")
-
-        # Fill other fields
+        # Fill remaining fields
         WebDriverWait(self.driver, self.timeout).until(
             EC.visibility_of_element_located(self.add_username)
         ).send_keys(username)
@@ -142,18 +107,177 @@ class AdminPage(BasePage):
         )
         logger.info("Success message displayed")
 
-    @allure.step("Delete selected user(s)")
-    def delete_user(self, username=None):
+
+    # ---------------- SEARCH USER ----------------
+
+    @allure.step("Search user: {username}")
+    def search_user(self, username="", role=None, emp_name="", status=None):
+        # Enter username
         if username:
-            user_checkbox = (By.XPATH, f"//div[text()='{username}']/../preceding-sibling::div//input[@type='checkbox']")
-            checkbox_element = WebDriverWait(self.driver, self.timeout).until(
-                EC.element_to_be_clickable(user_checkbox)
-            )
-            self.driver.execute_script("arguments[0].scrollIntoView(true);", checkbox_element)
-            self.driver.execute_script("arguments[0].click();", checkbox_element)
-            logger.info(f"Selected checkbox for user: {username}")
+            WebDriverWait(self.driver, self.timeout).until(
+                EC.visibility_of_element_located(self.username_field)
+            ).clear()
+            WebDriverWait(self.driver, self.timeout).until(
+                EC.visibility_of_element_located(self.username_field)
+            ).send_keys(username)
+
+        # Select role if provided
+        if role:
+            self.select_dropdown(self.user_role_dropdown, role)
+
+        # Enter employee name
+        if emp_name:
+            WebDriverWait(self.driver, self.timeout).until(
+                EC.visibility_of_element_located(self.employee_name_field)
+            ).clear()
+            WebDriverWait(self.driver, self.timeout).until(
+                EC.visibility_of_element_located(self.employee_name_field)
+            ).send_keys(emp_name)
+
+        # Select status if provided
+        if status:
+            self.select_dropdown(self.status_dropdown, status)
+
+        # Click search button
+        WebDriverWait(self.driver, self.timeout).until(
+            EC.element_to_be_clickable(self.search_button)
+        ).click()
+        logger.info(f"Searched user with Username={username}, Role={role}, Employee={emp_name}, Status={status}")
+
+    @allure.step("Reset search filters")
+    def reset_search(self):
+        WebDriverWait(self.driver, self.timeout).until(
+            EC.element_to_be_clickable(self.reset_button)
+        ).click()
+        logger.info("Reset search filters")
+
+
+    # ---------------- DELETE USER----------------
+
+    from selenium.webdriver.common.keys import Keys
+    import time
+
+    @allure.step("Search and Delete user: {username}")
+    def delete_user(self, username: str):
+        """Search for a user and delete them."""
+
+        # ----Search for the user----
+        search_input = (By.XPATH, "//label[normalize-space()='Username']/../following-sibling::div//input")
+        search_button = (By.XPATH, "//button[normalize-space()='Search']")
+
+        input_element = WebDriverWait(self.driver, self.timeout).until(
+            EC.visibility_of_element_located(search_input)
+        )
+        input_element.clear()
+        input_element.send_keys(username)
+        input_element.send_keys(Keys.ESCAPE)  # close any dropdown
 
         WebDriverWait(self.driver, self.timeout).until(
-            EC.element_to_be_clickable(self.delete_button)
+            EC.element_to_be_clickable(search_button)
         ).click()
+        logger.info(f"Searched for user: {username}")
+
+        # ----Click Delete button safely----
+        delete_button = (By.XPATH, "(//button[@class='oxd-icon-button oxd-table-cell-action-space'])[1]")
+        btn = WebDriverWait(self.driver, self.timeout).until(
+            EC.element_to_be_clickable(delete_button)
+        )
+        self.driver.execute_script("arguments[0].scrollIntoView(true);", btn)
+        time.sleep(0.3)  # optional: wait for page animation
+        btn.click()
         logger.info("Clicked Delete button")
+
+        # ----Confirm deletion safely----
+        confirm_button = (By.XPATH, "//button[normalize-space()='Yes, Delete']")
+        btn_confirm = WebDriverWait(self.driver, self.timeout).until(
+            EC.element_to_be_clickable(confirm_button)
+        )
+        self.driver.execute_script("arguments[0].scrollIntoView(true);", btn_confirm)
+        time.sleep(0.3)
+        btn_confirm.click()
+        logger.info(f"Confirmed deletion of user: {username}")
+
+    #--------------EDITING USER--------------------
+
+    @allure.step("Edit user: {username}")
+    def edit_user(self, username, new_role=None, new_status=None,
+                  change_password=False, new_password=None,change_password_checkbox =None):
+        """
+        Edit user details: role, status and optionally change password.
+        """
+        # Locate the pencil icon for the specific user row
+        edit_icon = (
+            By.XPATH,
+            f"//div[text()='{username}']/ancestor::div[contains(@class,'oxd-table-row')]"
+            "//i[@class='oxd-icon bi-pencil-fill']"
+        )
+
+        WebDriverWait(self.driver, self.timeout).until(
+            EC.element_to_be_clickable(edit_icon)
+        ).click()
+
+        if new_role:
+            self.select_dropdown(self.add_user_role, new_role)
+
+        if new_status:
+            self.select_dropdown(self.add_status, new_status)
+
+        # Save changes
+        WebDriverWait(self.driver, self.timeout).until(
+            EC.element_to_be_clickable(self.save_button)
+        ).click()
+
+        logger.info(
+            f"Edited user {username} → "
+            f"Role={new_role}, Status={new_status}, PasswordChanged={change_password}"
+        )
+
+    #----------------RESET PASSWORD-------------------
+
+    @allure.step("Reset password for user: {username}")
+    def reset_password(self, username, new_password):
+        """Reset password for an existing user."""
+
+        # ---- Click Reset Password button safely ----
+        reset_button = (
+        By.XPATH, f"//div[text()='{username}']/../following-sibling::div//button[contains(text(),'Reset Password')]")
+        btn_reset = WebDriverWait(self.driver, self.timeout).until(
+            EC.element_to_be_clickable(reset_button)
+        )
+        self.driver.execute_script("arguments[0].scrollIntoView(true);", btn_reset)
+        time.sleep(0.3)  # let animations settle
+        btn_reset.click()
+
+        # ---- Enter new password ----
+        password_input = WebDriverWait(self.driver, self.timeout).until(
+            EC.element_to_be_clickable(self.add_password)
+        )
+        password_input.clear()
+        password_input.send_keys(new_password)
+
+        confirm_input = WebDriverWait(self.driver, self.timeout).until(
+            EC.element_to_be_clickable(self.add_confirm_password)
+        )
+        confirm_input.clear()
+        confirm_input.send_keys(new_password)
+
+        # ---- Click Save ----
+        save_btn = WebDriverWait(self.driver, self.timeout).until(
+            EC.element_to_be_clickable(self.save_button)
+        )
+        self.driver.execute_script("arguments[0].scrollIntoView(true);", save_btn)
+        time.sleep(0.3)
+        save_btn.click()
+
+        logger.info(f"Password successfully reset for user: {username}")
+
+
+    #-------------CHECK MANDATORY FIELD----------------
+
+    @allure.step("Check mandatory field validation")
+    def check_mandatory_fields(self):
+        WebDriverWait(self.driver, self.timeout).until(
+            EC.element_to_be_clickable(self.save_button)
+        ).click()
+        error_messages = self.driver.find_elements(By.XPATH, "//span[contains(@class,'oxd-input-field-error-message')]")
+        return [err.text for err in error_messages if err.text.strip()]

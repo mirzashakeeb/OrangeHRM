@@ -1,4 +1,0 @@
-2025-09-15 13:30:08,326 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
-2025-09-15 13:30:11,539 - INFO - pages.base_page - Locating element: ('name', 'username')
-2025-09-15 13:30:25,480 - ERROR - pages.base_page - Element not found: ('name', 'username')
-2025-09-15 13:30:26,092 - ERROR - pages.base_page - Screenshot saved at: screenshots/username_not_found.png

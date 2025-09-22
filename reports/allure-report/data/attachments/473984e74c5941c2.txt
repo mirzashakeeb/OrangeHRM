@@ -1,0 +1,73 @@
+2025-09-18 15:38:16,177 - INFO - automation - Initializing WebDriver
+2025-09-18 15:39:23,876 - INFO - automation - Test test_search_existing_user PASSED
+2025-09-18 15:39:23,876 - INFO - automation - Quitting WebDriver
+2025-09-18 15:40:25,834 - INFO - automation - Initializing WebDriver
+2025-09-18 15:41:34,810 - INFO - automation - Test test_search_existing_user PASSED
+2025-09-18 15:41:34,810 - INFO - automation - Quitting WebDriver
+2025-09-18 15:48:20,999 - INFO - automation - Initializing WebDriver
+2025-09-18 15:49:08,505 - ERROR - automation - Test test_edit_existing_user FAILED
+2025-09-18 15:49:08,939 - INFO - automation - Quitting WebDriver
+2025-09-18 15:50:44,545 - INFO - automation - Initializing WebDriver
+2025-09-18 15:51:50,443 - ERROR - automation - Test test_edit_existing_user FAILED
+2025-09-18 15:51:50,890 - INFO - automation - Quitting WebDriver
+2025-09-18 15:59:23,865 - INFO - automation - Initializing WebDriver
+2025-09-18 15:59:50,791 - ERROR - automation - Test test_edit_existing_user FAILED
+2025-09-18 15:59:51,255 - INFO - automation - Quitting WebDriver
+2025-09-18 16:00:49,675 - INFO - automation - Initializing WebDriver
+2025-09-18 16:01:15,565 - ERROR - automation - Test test_edit_existing_user FAILED
+2025-09-18 16:01:15,992 - INFO - automation - Quitting WebDriver
+2025-09-18 16:38:50,435 - INFO - automation - Initializing WebDriver
+2025-09-18 16:39:28,907 - ERROR - automation - Test test_add_user FAILED
+2025-09-18 16:39:29,425 - INFO - automation - Quitting WebDriver
+2025-09-18 16:39:34,297 - INFO - automation - Initializing WebDriver
+2025-09-18 16:40:06,572 - INFO - automation - Test test_search_existing_user PASSED
+2025-09-18 16:40:06,575 - INFO - automation - Quitting WebDriver
+2025-09-18 16:40:10,558 - INFO - automation - Initializing WebDriver
+2025-09-18 16:41:03,832 - ERROR - automation - Test test_edit_existing_user FAILED
+2025-09-18 16:41:04,827 - INFO - automation - Quitting WebDriver
+2025-09-18 16:41:09,663 - INFO - automation - Initializing WebDriver
+2025-09-18 16:41:54,822 - INFO - automation - Quitting WebDriver
+2025-09-18 16:41:58,469 - INFO - automation - Initializing WebDriver
+2025-09-18 16:42:26,941 - INFO - automation - Test test_mandatory_fields_validation PASSED
+2025-09-18 16:42:26,959 - INFO - automation - Quitting WebDriver
+2025-09-18 16:42:29,976 - INFO - automation - Initializing WebDriver
+2025-09-18 16:43:06,776 - ERROR - automation - Test test_apply_leave FAILED
+2025-09-18 16:43:07,164 - INFO - automation - Quitting WebDriver
+2025-09-18 16:43:11,590 - INFO - automation - Initializing WebDriver
+2025-09-18 16:44:00,818 - INFO - automation - Test test_dashboard_loads_after_login PASSED
+2025-09-18 16:44:00,821 - INFO - automation - Quitting WebDriver
+2025-09-18 16:44:04,925 - INFO - automation - Initializing WebDriver
+2025-09-18 16:44:25,565 - INFO - automation - Test test_navigate_to_pim PASSED
+2025-09-18 16:44:25,568 - INFO - automation - Quitting WebDriver
+2025-09-18 16:44:28,537 - INFO - automation - Initializing WebDriver
+2025-09-18 16:44:49,525 - INFO - automation - Test test_navigate_to_leave PASSED
+2025-09-18 16:44:49,530 - INFO - automation - Quitting WebDriver
+2025-09-18 16:44:52,372 - INFO - automation - Initializing WebDriver
+2025-09-18 16:45:18,570 - INFO - automation - Test test_assign_leave_button PASSED
+2025-09-18 16:45:18,572 - INFO - automation - Quitting WebDriver
+2025-09-18 16:45:22,039 - INFO - automation - Initializing WebDriver
+2025-09-18 16:45:43,643 - INFO - automation - Test test_leave_list_button PASSED
+2025-09-18 16:45:43,648 - INFO - automation - Quitting WebDriver
+2025-09-18 16:45:46,677 - INFO - automation - Initializing WebDriver
+2025-09-18 16:46:10,053 - ERROR - automation - Test test_apply_leave FAILED
+2025-09-18 16:46:10,456 - INFO - automation - Quitting WebDriver
+2025-09-18 16:46:14,691 - INFO - automation - Initializing WebDriver
+2025-09-18 16:46:34,477 - INFO - automation - Test test_login[Admin-admin123-success] PASSED
+2025-09-18 16:46:34,545 - INFO - automation - Quitting WebDriver
+2025-09-18 16:46:37,547 - INFO - automation - Initializing WebDriver
+2025-09-18 16:47:02,022 - INFO - automation - Test test_login[invaliduser-admin123-failure] PASSED
+2025-09-18 16:47:02,067 - INFO - automation - Quitting WebDriver
+2025-09-18 16:47:05,385 - INFO - automation - Initializing WebDriver
+2025-09-18 16:47:29,397 - INFO - automation - Test test_login[admin-wrongpass-failure] PASSED
+2025-09-18 16:47:29,442 - INFO - automation - Quitting WebDriver
+2025-09-18 16:47:33,597 - INFO - automation - Initializing WebDriver
+2025-09-18 16:48:13,359 - INFO - automation - Test test_login[--failure] PASSED
+2025-09-18 16:48:13,402 - INFO - automation - Quitting WebDriver
+2025-09-18 16:48:16,302 - INFO - automation - Initializing WebDriver
+2025-09-18 16:48:41,510 - INFO - automation - Test test_login_logout PASSED
+2025-09-18 16:48:41,514 - INFO - automation - Quitting WebDriver
+2025-09-18 16:48:45,970 - INFO - automation - Initializing WebDriver
+2025-09-18 16:49:12,042 - INFO - automation - Test test_personal_details_displayed PASSED
+2025-09-18 16:49:12,045 - INFO - automation - Quitting WebDriver
+2025-09-18 16:49:15,153 - INFO - automation - Initializing WebDriver
+2025-09-18 16:49:58,636 - ERROR - automation - Test test_add_employee_with_login FAILED

@@ -1,0 +1,22 @@
+2025-09-22 13:41:33,015 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 13:41:38,935 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 13:41:40,058 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-22 13:41:40,390 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 13:41:40,494 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 13:41:40,945 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 13:41:41,032 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 13:41:44,000 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-22 13:41:46,318 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-22 13:41:48,118 - INFO - pages.admin_page - Opened Admin Tab
+2025-09-22 13:41:50,943 - INFO - pages.admin_page - Clicked Add button and Add User form loaded
+2025-09-22 13:41:50,946 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='User Role']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-22 13:41:51,274 - INFO - pages.base_page - Opened dropdown: ('xpath', "//label[text()='User Role']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-22 13:41:51,448 - INFO - pages.base_page - Selected option: Admin
+2025-09-22 13:41:53,663 - INFO - pages.admin_page - Selected first employee suggestion for 'Thomas Kutty Benny'
+2025-09-22 13:41:54,004 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='Status']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-22 13:41:54,245 - INFO - pages.base_page - Opened dropdown: ('xpath', "//label[text()='Status']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-22 13:41:54,399 - INFO - pages.base_page - Selected option: Enabled
+2025-09-22 13:41:55,229 - INFO - pages.admin_page - Added new user test_admin_1758528708
+2025-09-22 13:41:57,400 - INFO - pages.admin_page - Success message displayed
+2025-09-22 13:42:09,835 - INFO - pages.admin_page - Searched user with Username=test_admin_1758528708, Role=None, Employee=, Status=None
+2025-09-22 13:42:10,643 - INFO - pages.admin_page - Searched for user: test_admin_1758528708

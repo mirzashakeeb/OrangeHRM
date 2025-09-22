@@ -1,0 +1,21 @@
+[32mINFO    [0m automation:conftest.py:26 Initializing WebDriver
+[32mINFO    [0m pages.base_page:base_page.py:18 Opening URL: https://opensource-demo.orangehrmlive.com/
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('name', 'username')
+[32mINFO    [0m pages.base_page:base_page.py:54 Typing into element ('name', 'username'): Admin
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('name', 'password')
+[32mINFO    [0m pages.base_page:base_page.py:54 Typing into element ('name', 'password'): ********
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('xpath', "//button[@type='submit']")
+[32mINFO    [0m pages.base_page:base_page.py:61 Clicking element: ('xpath', "//button[@type='submit']")
+[32mINFO    [0m pages.login_page:login_page.py:36 Login successful – Dashboard loaded
+[32mINFO    [0m pages.dashboard_page:dashboard_page.py:35 Dashboard is loaded
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('xpath', "//button[@title='Apply Leave']")
+[32mINFO    [0m pages.base_page:base_page.py:61 Clicking element: ('xpath', "//button[@title='Apply Leave']")
+[32mINFO    [0m pages.dashboard_page:dashboard_page.py:80 Clicked Apply Leave from Quick Launch
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('xpath', "//label[text()='Leave Type']/following::div[@class='oxd-select-text-input'][1]")
+[32mINFO    [0m pages.base_page:base_page.py:70 Opened dropdown: ('xpath', "//label[text()='Leave Type']/following::div[@class='oxd-select-text-input'][1]")
+[32mINFO    [0m pages.base_page:base_page.py:87 Selected option: CAN - Personal
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('xpath', "//label[text()='From Date']/following::input[1]")
+[32mINFO    [0m pages.base_page:base_page.py:54 Typing into element ('xpath', "//label[text()='From Date']/following::input[1]"): 2025-09-10
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('xpath', "//label[text()='To Date']/following::input[1]")
+[32mINFO    [0m pages.base_page:base_page.py:54 Typing into element ('xpath', "//label[text()='To Date']/following::input[1]"): 2025-09-12
+[32mINFO    [0m automation:conftest.py:29 Quitting WebDriver
