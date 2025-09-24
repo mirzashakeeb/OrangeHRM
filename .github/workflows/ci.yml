@@ -25,12 +25,10 @@ jobs:
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-
       - name: Install Google Chrome
         run: |
           sudo apt-get update
@@ -39,44 +37,23 @@ jobs:
           sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
-
       - name: Check Chrome version
         run: google-chrome --version
 
       - name: Run tests
         run: |
-          mkdir -p reports/allure-results
+          mkdir -p reports
           pytest \
-            --alluredir=reports/allure-results \
             --html=reports/test_report.html \
             --self-contained-html \
             --junitxml=reports/junit.xml \
             -q --disable-warnings
-
       - name: Upload pytest HTML report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: pytest-html-report
           path: reports/test_report.html
-
-      - name: Install Allure CLI
-        run: |
-          sudo apt-add-repository ppa:qameta/allure -y
-          sudo apt-get update
-          sudo apt-get install -y allure
-
-      - name: Generate Allure HTML Report
-        if: always()
-        run: |
-          allure generate reports/allure-results -o reports/allure-report --clean
-
-      - name: Upload Allure HTML Report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report
-          path: reports/allure-report
 
       - name: Pytest Summary
         if: always()
