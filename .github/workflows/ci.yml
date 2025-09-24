@@ -60,26 +60,26 @@ jobs:
           name: pytest-html-report
           path: reports/test_report.html
 
-    - name: Install Allure CLI
-      run: |
-        sudo apt-add-repository ppa:qameta/allure -y
-        sudo apt-get update
-        sudo apt-get install -y allure
+      - name: Install Allure CLI
+        run: |
+          sudo apt-add-repository ppa:qameta/allure -y
+          sudo apt-get update
+          sudo apt-get install -y allure
 
-    - name: Generate Allure HTML Report
-      if: always()
-      run: |
-        allure generate reports/allure-results -o reports/allure-report --clean
+      - name: Generate Allure HTML Report
+        if: always()
+        run: |
+          allure generate reports/allure-results -o reports/allure-report --clean
 
-    - name: Upload Allure HTML Report
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: allure-report
-        path: reports/allure-report
+      - name: Upload Allure HTML Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: reports/allure-report
 
-    - name: Pytest Summary
-      if: always()
-      uses: test-summary/action@v2
-      with:
-        paths: reports/junit.xml
+      - name: Pytest Summary
+        if: always()
+        uses: test-summary/action@v2
+        with:
+          paths: reports/junit.xml
