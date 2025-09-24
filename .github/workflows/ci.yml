@@ -46,6 +46,11 @@ jobs:
           google-chrome --version
           python -c "from webdriver_manager.chrome import ChromeDriverManager; print('ChromeDriver:', ChromeDriverManager().install())"
 
+      - name: Install Google Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
       - name: Run tests
         run: |
           mkdir -p reports/allure-results
