@@ -1,0 +1,7 @@
+2025-09-22 17:05:08,841 - INFO - pages.my_life_page - Opened My Info tab
+2025-09-22 17:05:10,171 - INFO - pages.my_life_page - Personal Details displayed: True
+2025-09-22 17:05:37,588 - INFO - pages.pim_page - Clicked Add Employee button
+2025-09-22 17:05:39,619 - INFO - pages.pim_page - Toggled Create Login Details
+2025-09-22 17:05:39,703 - INFO - pages.pim_page - Login details fields are visible now
+2025-09-22 17:05:41,392 - INFO - pages.pim_page - Clicked Save button
+2025-09-22 17:05:48,881 - INFO - pages.pim_page - Personal Details page is visible

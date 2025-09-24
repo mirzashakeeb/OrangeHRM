@@ -23,11 +23,19 @@ if not logger.handlers:  #Prevent duplicate handlers
 
 @pytest.fixture
 def driver():
-    logger.info("Initializing WebDriver")
-    driver = DriverFactory.get_driver()
-    yield driver
-    logger.info("Quitting WebDriver")
-    driver.quit()
+    logger.info("Initializing WebDriver fixture")
+    driver_instance = None
+    try:
+        driver_instance = DriverFactory.get_driver()
+        yield driver_instance
+    except Exception as e:
+        logger.error(f"Failed to initialize WebDriver: {e}")
+        raise
+    finally:
+        if driver_instance:
+            driver_instance.quit()
+            logger.info("WebDriver instance quit successfully")
+
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)

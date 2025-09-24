@@ -1,0 +1,253 @@
+2025-09-22 16:55:01,694 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 16:55:09,301 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 16:55:12,276 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-22 16:55:13,209 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 16:55:13,329 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 16:55:13,738 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 16:55:13,803 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 16:55:17,506 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-22 16:55:18,860 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-22 16:55:21,680 - INFO - pages.admin_page - Opened Admin Tab
+2025-09-22 16:55:24,472 - INFO - pages.admin_page - Clicked Add button and Add User form loaded
+2025-09-22 16:55:24,492 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='User Role']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-22 16:55:24,756 - INFO - pages.base_page - Opened dropdown: ('xpath', "//label[text()='User Role']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-22 16:55:24,910 - INFO - pages.base_page - Selected option: Admin
+2025-09-22 16:56:10,466 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 16:56:15,899 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 16:56:17,577 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-22 16:56:17,964 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 16:56:18,053 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 16:56:18,461 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 16:56:18,525 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 16:56:21,421 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-22 16:56:22,179 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-22 16:56:24,337 - INFO - pages.admin_page - Opened Admin Tab
+2025-09-22 16:56:26,462 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='User Role']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-22 16:56:26,650 - INFO - pages.base_page - Opened dropdown: ('xpath', "//label[text()='User Role']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-22 16:56:26,837 - INFO - pages.base_page - Selected option: Admin
+2025-09-22 16:56:27,436 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='Status']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-22 16:56:27,673 - INFO - pages.base_page - Opened dropdown: ('xpath', "//label[text()='Status']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-22 16:56:27,889 - INFO - pages.base_page - Selected option: Enabled
+2025-09-22 16:56:28,120 - INFO - pages.admin_page - Searched user with Username=Admin, Role=Admin, Employee=mirza shakeeb farhan baig, Status=Enabled
+2025-09-22 16:56:39,207 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 16:56:44,560 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 16:56:45,902 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-22 16:56:46,222 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 16:56:46,293 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 16:56:46,639 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 16:56:46,706 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 16:56:49,822 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-22 16:56:50,514 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-22 16:56:52,391 - INFO - pages.admin_page - Opened Admin Tab
+2025-09-22 16:56:53,717 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='User Role']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-22 16:56:54,118 - INFO - pages.base_page - Opened dropdown: ('xpath', "//label[text()='User Role']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-22 16:56:54,327 - INFO - pages.base_page - Selected option: Admin
+2025-09-22 16:56:54,330 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='Status']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-22 16:56:54,611 - INFO - pages.base_page - Opened dropdown: ('xpath', "//label[text()='Status']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-22 16:56:55,073 - INFO - pages.base_page - Selected option: Enabled
+2025-09-22 16:56:55,489 - INFO - pages.admin_page - Searched user with Username=mirza, Role=Admin, Employee=, Status=Enabled
+2025-09-22 16:57:18,319 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 16:57:23,598 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 16:57:24,665 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-22 16:57:25,089 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 16:57:25,177 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 16:57:25,504 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 16:57:25,571 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 16:57:28,505 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-22 16:57:29,159 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-22 16:57:31,038 - INFO - pages.admin_page - Opened Admin Tab
+2025-09-22 16:57:52,123 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 16:57:57,959 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 16:58:00,130 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-22 16:58:00,517 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 16:58:00,629 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 16:58:00,978 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 16:58:01,052 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 16:58:03,958 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-22 16:58:04,974 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-22 16:58:07,097 - INFO - pages.admin_page - Opened Admin Tab
+2025-09-22 16:58:10,619 - INFO - pages.admin_page - Clicked Add button and Add User form loaded
+2025-09-22 16:58:21,107 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 16:58:26,787 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 16:58:28,097 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-22 16:58:28,522 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 16:58:28,608 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 16:58:28,971 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 16:58:29,040 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 16:58:31,715 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-22 16:58:32,268 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-22 16:58:34,665 - INFO - pages.admin_page - Opened Admin Tab
+2025-09-22 16:58:36,401 - INFO - pages.admin_page - Searched for user: mirza
+2025-09-22 16:58:56,888 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 16:59:03,105 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 16:59:05,014 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-22 16:59:05,310 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 16:59:05,396 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 16:59:05,711 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 16:59:05,774 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 16:59:10,790 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-22 16:59:11,935 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-22 16:59:13,264 - INFO - pages.base_page - Locating element: ('xpath', "//button[@title='Apply Leave']")
+2025-09-22 16:59:13,395 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@title='Apply Leave']")
+2025-09-22 16:59:14,964 - INFO - pages.dashboard_page - Clicked Apply Leave from Quick Launch
+2025-09-22 16:59:14,965 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='Leave Type']/following::div[@class='oxd-select-text-input'][1]")
+2025-09-22 16:59:17,640 - INFO - pages.base_page - Opened dropdown: ('xpath', "//label[text()='Leave Type']/following::div[@class='oxd-select-text-input'][1]")
+2025-09-22 16:59:27,798 - ERROR - pages.base_page - Option 'CAN - Bereavement' not found in dropdown ('xpath', "//label[text()='Leave Type']/following::div[@class='oxd-select-text-input'][1]")
+2025-09-22 16:59:38,619 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 16:59:44,317 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 16:59:45,370 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-22 16:59:45,765 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 16:59:45,845 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 16:59:46,173 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 16:59:46,239 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 16:59:49,064 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-22 16:59:50,474 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-22 17:00:23,649 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 17:00:29,634 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 17:00:31,450 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-22 17:00:31,773 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 17:00:31,835 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 17:00:32,160 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:00:32,232 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:00:35,411 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-22 17:00:35,929 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-22 17:00:36,466 - INFO - pages.base_page - Locating element: ('xpath', "//span[text()='PIM']")
+2025-09-22 17:00:36,608 - INFO - pages.base_page - Clicking element: ('xpath', "//span[text()='PIM']")
+2025-09-22 17:00:37,808 - INFO - pages.dashboard_page - Navigated to PIM Module
+2025-09-22 17:00:48,547 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 17:00:54,248 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 17:00:55,776 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-22 17:00:56,237 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 17:00:56,340 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 17:00:56,599 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:00:56,650 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:00:59,839 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-22 17:01:00,422 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-22 17:01:01,006 - INFO - pages.base_page - Locating element: ('xpath', "//span[text()='Leave']")
+2025-09-22 17:01:01,105 - INFO - pages.base_page - Clicking element: ('xpath', "//span[text()='Leave']")
+2025-09-22 17:01:02,394 - INFO - pages.dashboard_page - Navigated to Leave Module
+2025-09-22 17:01:12,571 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 17:01:18,414 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 17:01:19,483 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-22 17:01:19,787 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 17:01:19,869 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 17:01:20,232 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:01:20,295 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:01:23,205 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-22 17:01:23,931 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-22 17:01:24,513 - INFO - pages.base_page - Locating element: ('xpath', "//button[@title='Assign Leave']")
+2025-09-22 17:01:24,627 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@title='Assign Leave']")
+2025-09-22 17:01:25,450 - INFO - pages.dashboard_page - Clicked Assign Leave from Quick Launch
+2025-09-22 17:01:35,018 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 17:01:40,686 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 17:01:41,957 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-22 17:01:42,273 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 17:01:42,349 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 17:01:42,684 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:01:42,757 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:01:45,513 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-22 17:01:46,744 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-22 17:01:47,784 - INFO - pages.base_page - Locating element: ('xpath', "//button[@title='Leave List']")
+2025-09-22 17:01:47,858 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@title='Leave List']")
+2025-09-22 17:01:48,805 - INFO - pages.dashboard_page - Clicked Leave List from Quick Launch
+2025-09-22 17:02:00,479 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 17:02:05,777 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 17:02:06,969 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-22 17:02:07,277 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 17:02:07,360 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 17:02:07,682 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:02:07,794 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:02:10,563 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-22 17:02:11,335 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-22 17:02:11,975 - INFO - pages.base_page - Locating element: ('xpath', "//button[@title='Apply Leave']")
+2025-09-22 17:02:12,084 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@title='Apply Leave']")
+2025-09-22 17:02:12,932 - INFO - pages.dashboard_page - Clicked Apply Leave from Quick Launch
+2025-09-22 17:02:12,936 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='Leave Type']/following::div[@class='oxd-select-text-input'][1]")
+2025-09-22 17:02:14,126 - INFO - pages.base_page - Opened dropdown: ('xpath', "//label[text()='Leave Type']/following::div[@class='oxd-select-text-input'][1]")
+2025-09-22 17:02:14,316 - INFO - pages.base_page - Selected option: CAN - Personal
+2025-09-22 17:02:14,319 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='From Date']/following::input[1]")
+2025-09-22 17:02:14,384 - INFO - pages.base_page - Typing into element ('xpath', "//label[text()='From Date']/following::input[1]"): 2025-09-10
+2025-09-22 17:02:14,675 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='To Date']/following::input[1]")
+2025-09-22 17:02:14,744 - INFO - pages.base_page - Typing into element ('xpath', "//label[text()='To Date']/following::input[1]"): 2025-09-12
+2025-09-22 17:02:29,331 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 17:02:36,013 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 17:02:37,504 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-22 17:02:37,960 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 17:02:38,095 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 17:02:38,660 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:02:38,800 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:02:41,438 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-22 17:02:55,066 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 17:03:00,362 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 17:03:01,455 - INFO - pages.base_page - Typing into element ('name', 'username'): invaliduser
+2025-09-22 17:03:01,877 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 17:03:01,951 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 17:03:02,252 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:03:02,316 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:03:09,284 - WARNING - pages.login_page - Dashboard not found, checking error message
+2025-09-22 17:03:12,535 - ERROR - pages.login_page - Login failed – Neither dashboard nor error message appeared
+2025-09-22 17:03:23,975 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 17:03:29,876 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 17:03:31,193 - INFO - pages.base_page - Typing into element ('name', 'username'): admin
+2025-09-22 17:03:31,503 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 17:03:31,587 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 17:03:31,947 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:03:32,012 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:03:39,142 - WARNING - pages.login_page - Dashboard not found, checking error message
+2025-09-22 17:03:42,458 - ERROR - pages.login_page - Login failed – Neither dashboard nor error message appeared
+2025-09-22 17:03:58,146 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 17:04:03,504 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 17:04:04,595 - INFO - pages.base_page - Typing into element ('name', 'username'): 
+2025-09-22 17:04:04,821 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 17:04:04,917 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 17:04:05,210 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:04:05,271 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:04:10,829 - WARNING - pages.login_page - Dashboard not found, checking error message
+2025-09-22 17:04:14,033 - ERROR - pages.login_page - Login failed – Neither dashboard nor error message appeared
+2025-09-22 17:04:26,008 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 17:04:32,565 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 17:04:34,470 - INFO - pages.base_page - Typing into element ('name', 'username'): admin
+2025-09-22 17:04:34,873 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 17:04:34,957 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 17:04:35,253 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:04:35,315 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:04:38,642 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-22 17:04:41,454 - INFO - pages.dashboard_page - Logout successful
+2025-09-22 17:04:42,648 - INFO - pages.login_page - Login page is displayed
+2025-09-22 17:04:53,466 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 17:04:59,379 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 17:05:00,932 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-22 17:05:01,300 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 17:05:01,407 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 17:05:01,741 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:05:01,834 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:05:05,515 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-22 17:05:06,799 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-22 17:05:20,271 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-22 17:05:25,595 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-22 17:05:27,651 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-22 17:05:28,007 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-22 17:05:28,078 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-22 17:05:28,498 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:05:28,568 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-22 17:05:31,583 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-22 17:05:32,722 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-22 17:05:33,292 - INFO - pages.base_page - Locating element: ('xpath', "//span[text()='PIM']")
+2025-09-22 17:05:33,402 - INFO - pages.base_page - Clicking element: ('xpath', "//span[text()='PIM']")
+2025-09-22 17:05:34,568 - INFO - pages.dashboard_page - Navigated to PIM Module
+2025-09-22 17:05:34,570 - INFO - pages.base_page - Locating element: ('xpath', "//button[normalize-space()='Add']")
+2025-09-22 17:05:35,791 - INFO - pages.base_page - Clicking element: ('xpath', "//button[normalize-space()='Add']")
+2025-09-22 17:05:38,370 - INFO - pages.base_page - Locating element: ('name', 'firstName')
+2025-09-22 17:05:38,416 - INFO - pages.base_page - Typing into element ('name', 'firstName'): MIRZA
+2025-09-22 17:05:38,882 - INFO - pages.base_page - Locating element: ('name', 'lastName')
+2025-09-22 17:05:39,043 - INFO - pages.base_page - Typing into element ('name', 'lastName'): SHAKEEB
+2025-09-22 17:05:39,377 - INFO - pages.base_page - Locating element: ('xpath', "//span[@class='oxd-switch-input oxd-switch-input--active --label-right']")
+2025-09-22 17:05:39,446 - INFO - pages.base_page - Clicking element: ('xpath', "//span[@class='oxd-switch-input oxd-switch-input--active --label-right']")
+2025-09-22 17:05:39,705 - INFO - pages.base_page - Locating element: ('xpath', "//input[@autocomplete='off' and not(@type) and contains(@class, 'oxd-input')]")
+2025-09-22 17:05:39,757 - INFO - pages.base_page - Typing into element ('xpath', "//input[@autocomplete='off' and not(@type) and contains(@class, 'oxd-input')]"): mirzasha123
+2025-09-22 17:05:40,203 - INFO - pages.base_page - Locating element: ('xpath', "(//input[@type='password'])[1]")
+2025-09-22 17:05:40,276 - INFO - pages.base_page - Typing into element ('xpath', "(//input[@type='password'])[1]"): ********
+2025-09-22 17:05:40,659 - INFO - pages.base_page - Locating element: ('xpath', "(//input[@type='password'])[2]")
+2025-09-22 17:05:40,730 - INFO - pages.base_page - Typing into element ('xpath', "(//input[@type='password'])[2]"): ********
+2025-09-22 17:05:41,183 - INFO - pages.base_page - Locating element: ('xpath', "//button[normalize-space()='Save']")
+2025-09-22 17:05:41,250 - INFO - pages.base_page - Clicking element: ('xpath', "//button[normalize-space()='Save']")

@@ -1,0 +1,208 @@
+2025-09-22 11:42:34,469 - INFO - automation - Initializing WebDriver
+2025-09-22 11:43:36,132 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 11:43:36,626 - INFO - automation - Quitting WebDriver
+2025-09-22 11:49:54,738 - INFO - automation - Initializing WebDriver
+2025-09-22 11:50:23,236 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 11:50:23,746 - INFO - automation - Quitting WebDriver
+2025-09-22 11:50:35,386 - INFO - automation - Initializing WebDriver
+2025-09-22 11:51:03,401 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 11:51:03,959 - INFO - automation - Quitting WebDriver
+2025-09-22 11:53:00,780 - INFO - automation - Initializing WebDriver
+2025-09-22 11:53:27,664 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 11:53:28,110 - INFO - automation - Quitting WebDriver
+2025-09-22 11:55:49,226 - INFO - automation - Initializing WebDriver
+2025-09-22 11:56:16,778 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 11:56:17,211 - INFO - automation - Quitting WebDriver
+2025-09-22 11:57:44,881 - INFO - automation - Initializing WebDriver
+2025-09-22 11:58:13,549 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 11:58:14,012 - INFO - automation - Quitting WebDriver
+2025-09-22 12:00:31,349 - INFO - automation - Initializing WebDriver
+2025-09-22 12:00:59,455 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:00:59,924 - INFO - automation - Quitting WebDriver
+2025-09-22 12:02:12,647 - INFO - automation - Initializing WebDriver
+2025-09-22 12:02:41,305 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:02:41,780 - INFO - automation - Quitting WebDriver
+2025-09-22 12:02:54,481 - INFO - automation - Initializing WebDriver
+2025-09-22 12:03:25,763 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:03:26,511 - INFO - automation - Quitting WebDriver
+2025-09-22 12:05:44,981 - INFO - automation - Initializing WebDriver
+2025-09-22 12:06:15,347 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:06:15,898 - INFO - automation - Quitting WebDriver
+2025-09-22 12:06:28,843 - INFO - automation - Initializing WebDriver
+2025-09-22 12:06:57,602 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:06:58,081 - INFO - automation - Quitting WebDriver
+2025-09-22 12:07:10,996 - INFO - automation - Initializing WebDriver
+2025-09-22 12:07:43,213 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:07:43,720 - INFO - automation - Quitting WebDriver
+2025-09-22 12:14:51,344 - INFO - automation - Initializing WebDriver
+2025-09-22 12:15:17,953 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:15:18,398 - INFO - automation - Quitting WebDriver
+2025-09-22 12:20:26,647 - INFO - automation - Initializing WebDriver
+2025-09-22 12:20:52,818 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:20:53,326 - INFO - automation - Quitting WebDriver
+2025-09-22 12:30:47,324 - INFO - automation - Initializing WebDriver
+2025-09-22 12:31:12,933 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:31:13,463 - INFO - automation - Quitting WebDriver
+2025-09-22 12:33:24,060 - INFO - automation - Initializing WebDriver
+2025-09-22 12:33:50,583 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:33:51,071 - INFO - automation - Quitting WebDriver
+2025-09-22 12:36:19,987 - INFO - automation - Initializing WebDriver
+2025-09-22 12:36:46,465 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:36:46,947 - INFO - automation - Quitting WebDriver
+2025-09-22 12:41:30,058 - INFO - automation - Initializing WebDriver
+2025-09-22 12:42:08,324 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:42:08,941 - INFO - automation - Quitting WebDriver
+2025-09-22 12:52:16,334 - INFO - automation - Initializing WebDriver
+2025-09-22 12:52:54,910 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:52:55,601 - INFO - automation - Quitting WebDriver
+2025-09-22 12:53:19,178 - INFO - automation - Initializing WebDriver
+2025-09-22 12:53:45,579 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:53:46,017 - INFO - automation - Quitting WebDriver
+2025-09-22 12:57:50,943 - INFO - automation - Initializing WebDriver
+2025-09-22 12:58:28,354 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 12:58:28,870 - INFO - automation - Quitting WebDriver
+2025-09-22 13:06:13,702 - INFO - automation - Initializing WebDriver
+2025-09-22 13:06:41,842 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 13:06:42,399 - INFO - automation - Quitting WebDriver
+2025-09-22 13:13:56,383 - INFO - automation - Initializing WebDriver
+2025-09-22 13:14:38,558 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 13:14:39,099 - INFO - automation - Quitting WebDriver
+2025-09-22 13:18:38,405 - INFO - automation - Initializing WebDriver
+2025-09-22 13:19:15,215 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 13:19:15,642 - INFO - automation - Quitting WebDriver
+2025-09-22 13:24:32,200 - INFO - automation - Initializing WebDriver
+2025-09-22 13:24:58,139 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 13:24:58,564 - INFO - automation - Quitting WebDriver
+2025-09-22 13:28:32,091 - INFO - automation - Initializing WebDriver
+2025-09-22 13:29:09,563 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 13:29:10,037 - INFO - automation - Quitting WebDriver
+2025-09-22 13:30:18,282 - INFO - automation - Initializing WebDriver
+2025-09-22 13:30:53,505 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 13:30:54,276 - INFO - automation - Quitting WebDriver
+2025-09-22 13:32:45,148 - INFO - automation - Initializing WebDriver
+2025-09-22 13:33:10,569 - INFO - automation - Test test_delete_existing_user PASSED
+2025-09-22 13:33:10,574 - INFO - automation - Quitting WebDriver
+2025-09-22 13:40:26,461 - INFO - automation - Initializing WebDriver
+2025-09-22 13:41:10,443 - ERROR - automation - Test test_reset_password FAILED
+2025-09-22 13:41:14,327 - INFO - automation - Quitting WebDriver
+2025-09-22 13:41:26,287 - INFO - automation - Initializing WebDriver
+2025-09-22 13:42:08,673 - ERROR - automation - Test test_reset_password FAILED
+2025-09-22 13:42:20,887 - INFO - automation - Quitting WebDriver
+2025-09-22 13:47:46,452 - INFO - automation - Initializing WebDriver
+2025-09-22 13:48:20,393 - ERROR - automation - Test test_reset_existing_user_password FAILED
+2025-09-22 13:48:21,718 - INFO - automation - Quitting WebDriver
+2025-09-22 16:54:25,442 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 16:54:25,455 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 16:55:36,980 - ERROR - automation - Test test_add_user FAILED
+2025-09-22 16:55:40,894 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 16:55:41,014 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 16:55:41,015 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 16:56:28,218 - INFO - automation - Test test_search_existing_user PASSED
+2025-09-22 16:56:31,912 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 16:56:31,968 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 16:56:31,969 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 16:57:05,750 - ERROR - automation - Test test_edit_existing_user FAILED
+2025-09-22 16:57:10,959 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 16:57:11,024 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 16:57:11,025 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 16:57:41,603 - ERROR - automation - Test test_reset_existing_user_password FAILED
+2025-09-22 16:57:44,997 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 16:57:45,061 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 16:57:45,062 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 16:58:11,462 - INFO - automation - Test test_mandatory_fields_validation PASSED
+2025-09-22 16:58:14,171 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 16:58:14,231 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 16:58:14,233 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 16:58:46,562 - ERROR - automation - Test test_delete_existing_user FAILED
+2025-09-22 16:58:49,917 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 16:58:49,977 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 16:58:49,977 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 16:59:28,348 - ERROR - automation - Test test_apply_leave FAILED
+2025-09-22 16:59:31,504 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 16:59:31,570 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 16:59:31,571 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 16:59:51,145 - INFO - automation - Test test_dashboard_loads_after_login PASSED
+2025-09-22 16:59:55,254 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 16:59:55,302 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 16:59:55,303 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 17:00:37,810 - INFO - automation - Test test_navigate_to_pim PASSED
+2025-09-22 17:00:40,405 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 17:00:40,471 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 17:00:40,472 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 17:01:02,397 - INFO - automation - Test test_navigate_to_leave PASSED
+2025-09-22 17:01:05,149 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 17:01:05,259 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 17:01:05,260 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 17:01:25,452 - INFO - automation - Test test_assign_leave_button PASSED
+2025-09-22 17:01:28,105 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 17:01:28,155 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 17:01:28,156 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 17:01:48,807 - INFO - automation - Test test_leave_list_button PASSED
+2025-09-22 17:01:51,467 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 17:01:51,517 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 17:01:51,518 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 17:02:15,120 - ERROR - automation - Test test_apply_leave FAILED
+2025-09-22 17:02:18,157 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 17:02:18,262 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 17:02:18,263 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 17:02:42,431 - INFO - automation - Test test_login[Admin-admin123-success] PASSED
+2025-09-22 17:02:45,320 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 17:02:45,404 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 17:02:45,404 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 17:03:13,289 - INFO - automation - Test test_login[invaliduser-admin123-failure] PASSED
+2025-09-22 17:03:16,098 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 17:03:16,146 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 17:03:16,147 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 17:03:43,625 - INFO - automation - Test test_login[admin-wrongpass-failure] PASSED
+2025-09-22 17:03:48,753 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 17:03:48,803 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 17:03:48,804 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 17:04:15,175 - INFO - automation - Test test_login[--failure] PASSED
+2025-09-22 17:04:18,446 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 17:04:18,535 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 17:04:18,536 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 17:04:42,974 - INFO - automation - Test test_login_logout PASSED
+2025-09-22 17:04:45,625 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 17:04:45,679 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 17:04:45,680 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 17:05:10,174 - INFO - automation - Test test_personal_details_displayed PASSED
+2025-09-22 17:05:12,757 - INFO - automation - WebDriver instance quit successfully
+2025-09-22 17:05:12,813 - INFO - automation - Initializing WebDriver fixture
+2025-09-22 17:05:12,814 - INFO - automation - Starting Chrome WebDriver
+2025-09-22 17:05:48,883 - INFO - automation - Test test_add_employee_with_login PASSED
+2025-09-22 17:05:51,664 - INFO - automation - WebDriver instance quit successfully
+2025-09-24 11:17:25,610 - INFO - automation - Initializing WebDriver fixture
+2025-09-24 11:17:25,657 - INFO - automation - Starting Chrome WebDriver
+2025-09-24 11:18:57,351 - ERROR - automation - Test test_add_user FAILED
+2025-09-24 11:19:00,690 - INFO - automation - WebDriver instance quit successfully
+2025-09-24 11:19:16,257 - INFO - automation - Initializing WebDriver fixture
+2025-09-24 11:19:16,257 - INFO - automation - Starting Chrome WebDriver
+2025-09-24 11:20:05,152 - ERROR - automation - Test test_add_user FAILED
+2025-09-24 11:20:08,670 - INFO - automation - WebDriver instance quit successfully
+2025-09-24 11:22:21,472 - INFO - automation - Initializing WebDriver fixture
+2025-09-24 11:22:21,472 - INFO - automation - Starting Chrome WebDriver
+2025-09-24 11:23:16,312 - INFO - automation - Test test_add_user PASSED
+2025-09-24 11:23:21,711 - INFO - automation - WebDriver instance quit successfully
+2025-09-24 11:24:15,574 - INFO - automation - Initializing WebDriver fixture
+2025-09-24 11:24:15,574 - INFO - automation - Starting Chrome WebDriver
+2025-09-24 11:25:06,571 - ERROR - automation - Test test_edit_existing_user FAILED
+2025-09-24 11:25:10,883 - INFO - automation - WebDriver instance quit successfully
+2025-09-24 11:25:59,642 - INFO - automation - Initializing WebDriver fixture
+2025-09-24 11:25:59,642 - INFO - automation - Starting Chrome WebDriver
+2025-09-24 11:26:37,933 - ERROR - automation - Test test_edit_existing_user FAILED
+2025-09-24 11:26:41,118 - INFO - automation - WebDriver instance quit successfully
+2025-09-24 11:26:48,556 - INFO - automation - Initializing WebDriver fixture
+2025-09-24 11:26:48,556 - INFO - automation - Starting Chrome WebDriver
+2025-09-24 11:27:20,019 - INFO - automation - Test test_edit_existing_user PASSED
+2025-09-24 11:27:24,650 - INFO - automation - WebDriver instance quit successfully
+2025-09-24 11:29:21,730 - INFO - automation - Initializing WebDriver fixture
+2025-09-24 11:29:21,730 - INFO - automation - Starting Chrome WebDriver
+2025-09-24 11:30:29,421 - ERROR - automation - Test test_edit_existing_user FAILED
+2025-09-24 11:30:32,472 - INFO - automation - WebDriver instance quit successfully
+2025-09-24 11:31:35,298 - INFO - automation - Initializing WebDriver fixture
+2025-09-24 11:31:35,298 - INFO - automation - Starting Chrome WebDriver
+2025-09-24 11:32:25,127 - ERROR - automation - Test test_reset_existing_user_password FAILED
+2025-09-24 11:32:28,085 - INFO - automation - WebDriver instance quit successfully
+2025-09-24 11:37:32,064 - INFO - automation - Initializing WebDriver fixture
+2025-09-24 11:37:32,064 - INFO - automation - Starting Chrome WebDriver
+2025-09-24 11:38:22,878 - ERROR - automation - Test test_reset_existing_user_password FAILED

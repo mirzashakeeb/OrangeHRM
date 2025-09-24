@@ -1,28 +1,41 @@
 import platform
+import logging
 import allure
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
+logger = logging.getLogger("automation")
+logging.basicConfig(level=logging.INFO)
 
 class DriverFactory:
     @staticmethod
     def get_driver():
+        logger.info("Starting Chrome WebDriver")
+
         options = webdriver.ChromeOptions()
-        options.add_argument("--start-maximized")
+        options.add_argument("--headless")
+        options.add_argument("--disable-gpu")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--window-size=1920,1080")
+        options.add_argument("--disable-extensions")
+        options.add_argument("--remote-allow-origins=*")
 
-        # Force ChromeDriver version 109 (last supported for Win8)
-        service = Service(ChromeDriverManager(driver_version="109.0.5414.74").install())
+        # Detect OS
+        if platform.system() == "Windows":
+            # Windows 8 local environment
+            service = Service(ChromeDriverManager(driver_version="109.0.5414.74").install())
+        else:
+            # GitHub Actions / Ubuntu CI
+            service = Service(ChromeDriverManager().install())
+
         driver = webdriver.Chrome(service=service, options=options)
-
-        # 🔹 Attach environment details to Allure
         DriverFactory.attach_env_info(driver)
-
         return driver
 
     @staticmethod
     def attach_env_info(driver):
-        """Attach environment details to Allure report"""
         try:
             browser_name = driver.capabilities.get("browserName", "Unknown")
             browser_version = driver.capabilities.get("browserVersion", "Unknown")

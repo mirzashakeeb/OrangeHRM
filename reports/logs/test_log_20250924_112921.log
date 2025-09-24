@@ -1,0 +1,10 @@
+2025-09-24 11:29:29,355 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-24 11:30:01,564 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-24 11:30:09,463 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-24 11:30:09,762 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-24 11:30:09,831 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-24 11:30:10,169 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-24 11:30:10,240 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-24 11:30:13,753 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-24 11:30:14,286 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-24 11:30:18,062 - INFO - pages.admin_page - Opened Admin Tab

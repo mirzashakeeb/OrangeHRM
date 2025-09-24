@@ -1,0 +1,17 @@
+2025-09-24 11:24:23,262 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-24 11:24:43,811 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-24 11:24:45,685 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-24 11:24:46,060 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-24 11:24:46,128 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-24 11:24:46,447 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-24 11:24:46,496 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-24 11:24:49,282 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-24 11:24:50,297 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-24 11:24:52,255 - INFO - pages.admin_page - Opened Admin Tab
+2025-09-24 11:24:54,109 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='User Role']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-24 11:24:54,315 - INFO - pages.base_page - Opened dropdown: ('xpath', "//label[text()='User Role']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-24 11:24:54,474 - INFO - pages.base_page - Selected option: Admin
+2025-09-24 11:24:54,476 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='Status']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-24 11:24:54,670 - INFO - pages.base_page - Opened dropdown: ('xpath', "//label[text()='Status']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-24 11:24:54,869 - INFO - pages.base_page - Selected option: Enabled
+2025-09-24 11:24:55,131 - INFO - pages.admin_page - Searched user with Username=mirza, Role=Admin, Employee=, Status=Enabled

@@ -56,7 +56,7 @@ class TestAdminPage:
     @allure.story("Add new user")
     def test_add_user(self, login_as_admin):
         admin_page = login_as_admin
-        username = f"mirza{str(int(time.time()))[-5:]}"
+        username = "mirza"
         employee_name = "mirza shakeeb farhan baig"
 
         admin_page.click_add_button()
@@ -91,7 +91,7 @@ class TestAdminPage:
         admin_page.open_admin_tab()
 
         # --- Search for an existing user ---
-        existing_username = "Admin"         # Replace with actual existing username
+        existing_username = "mirza"         # Replace with actual existing username
         existing_employee = "mirza shakeeb farhan baig"      # Replace with actual employee name
         admin_page.search_user(
             username=existing_username,
