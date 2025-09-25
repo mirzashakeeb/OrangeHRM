@@ -25,7 +25,7 @@ class DriverFactory:
         # Detect OS
         if platform.system() == "Windows":
             # Windows 8 local environment
-            service = Service(ChromeDriverManager(driver_version="109.0.5414.74").install())
+            service = Service(ChromeDriverManager().install())
         else:
             # GitHub Actions / Ubuntu CI
             service = Service(ChromeDriverManager().install())
