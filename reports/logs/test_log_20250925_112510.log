@@ -1,0 +1,13 @@
+2025-09-25 11:25:18,229 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-25 11:25:23,695 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-25 11:25:24,934 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-25 11:25:25,294 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-25 11:25:25,390 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-25 11:25:25,726 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-25 11:25:25,798 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-25 11:25:28,495 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-25 11:25:30,359 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-25 11:25:32,136 - INFO - pages.admin_page - Opened Admin Tab
+2025-09-25 11:25:34,049 - INFO - pages.admin_page - Searched for user: mirza
+2025-09-25 11:25:35,127 - INFO - pages.admin_page - Clicked Delete button
+2025-09-25 11:25:35,691 - INFO - pages.admin_page - Confirmed deletion of user: mirza

@@ -1,0 +1,20 @@
+[32mINFO    [0m automation:conftest.py:26 Initializing WebDriver fixture
+[32mINFO    [0m automation:driver_factory.py:14 Starting Chrome WebDriver
+[32mINFO    [0m WDM:logger.py:11 ====== WebDriver manager ======
+[32mINFO    [0m WDM:logger.py:11 Driver [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74\chromedriver.exe] found in cache
+[32mINFO    [0m pages.base_page:base_page.py:18 Opening URL: https://opensource-demo.orangehrmlive.com/
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('name', 'username')
+[32mINFO    [0m pages.base_page:base_page.py:54 Typing into element ('name', 'username'): Admin
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('name', 'password')
+[32mINFO    [0m pages.base_page:base_page.py:54 Typing into element ('name', 'password'): ********
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('xpath', "//button[@type='submit']")
+[32mINFO    [0m pages.base_page:base_page.py:61 Clicking element: ('xpath', "//button[@type='submit']")
+[32mINFO    [0m pages.login_page:login_page.py:36 Login successful – Dashboard loaded
+[32mINFO    [0m pages.dashboard_page:dashboard_page.py:35 Dashboard is loaded
+[32mINFO    [0m pages.admin_page:admin_page.py:48 Opened Admin Tab
+[32mINFO    [0m pages.admin_page:admin_page.py:178 Searched for user: bubu30
+[32mINFO    [0m pages.admin_page:admin_page.py:188 Clicked Delete button
+[32mINFO    [0m pages.admin_page:admin_page.py:198 Confirmed deletion of user: bubu30
+[32mINFO    [0m pages.admin_page:admin_page.py:108 Success message displayed
+[32mINFO    [0m pages.base_page:base_page.py:105 Element is visible: ('xpath', "//div[contains(@class,'oxd-toast--success')]")
+[32mINFO    [0m automation:conftest.py:37 WebDriver instance quit successfully

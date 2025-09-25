@@ -1,0 +1,20 @@
+2025-09-24 16:48:22,668 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-24 16:48:28,002 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-24 16:48:29,283 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-24 16:48:29,619 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-24 16:48:29,708 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-24 16:48:30,128 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-24 16:48:30,198 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-24 16:48:32,984 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-24 16:48:35,164 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-24 16:48:35,503 - INFO - pages.base_page - Locating element: ('xpath', "//span[text()='PIM']")
+2025-09-24 16:48:35,582 - INFO - pages.base_page - Clicking element: ('xpath', "//span[text()='PIM']")
+2025-09-24 16:48:36,754 - INFO - pages.dashboard_page - Navigated to PIM Module
+2025-09-24 16:48:36,757 - INFO - pages.base_page - Locating element: ('xpath', "//input[@placeholder='Type for hints...'][1]")
+2025-09-24 16:48:37,628 - INFO - pages.base_page - Typing into element ('xpath', "//input[@placeholder='Type for hints...'][1]"): mirza shakeeb farhan baig
+2025-09-24 16:48:39,123 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-24 16:48:39,261 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-24 16:48:39,494 - INFO - pages.pim_page - Searched for employee: mirza shakeeb farhan baig
+2025-09-24 16:48:39,499 - INFO - pages.base_page - Locating element: ('xpath', "//button[@class='oxd-icon-button oxd-table-cell-action-space'][1]")
+2025-09-24 16:48:40,109 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@class='oxd-icon-button oxd-table-cell-action-space'][1]")
+2025-09-24 16:48:40,934 - INFO - pages.pim_page - Clicked Edit button for: mirza shakeeb farhan baig

@@ -1,0 +1,21 @@
+2025-09-25 11:26:39,290 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-25 11:26:44,538 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-25 11:26:45,778 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-25 11:26:46,258 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-25 11:26:46,434 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-25 11:26:46,842 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-25 11:26:46,914 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-25 11:26:49,470 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-25 11:26:51,494 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-25 11:26:53,118 - INFO - pages.admin_page - Opened Admin Tab
+2025-09-25 11:26:55,718 - INFO - pages.admin_page - Clicked Add button and Add User form loaded
+2025-09-25 11:26:55,718 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='User Role']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-25 11:26:56,038 - INFO - pages.base_page - Opened dropdown: ('xpath', "//label[text()='User Role']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-25 11:26:56,214 - INFO - pages.base_page - Selected option: Admin
+2025-09-25 11:26:58,488 - INFO - pages.admin_page - Selected first employee suggestion for 'mirza shakeeb farhan baig'
+2025-09-25 11:26:58,736 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='Status']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-25 11:26:58,951 - INFO - pages.base_page - Opened dropdown: ('xpath', "//label[text()='Status']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-25 11:26:59,107 - INFO - pages.base_page - Selected option: Enabled
+2025-09-25 11:26:59,944 - INFO - pages.admin_page - Added new user mirza
+2025-09-25 11:27:02,187 - INFO - pages.admin_page - Success message displayed
+2025-09-25 11:27:02,235 - INFO - pages.base_page - Element is visible: ('xpath', "//div[contains(@class,'oxd-toast--success')]")

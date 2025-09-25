@@ -1,0 +1,24 @@
+2025-09-25 12:53:18,569 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-25 12:53:23,940 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-25 12:53:26,050 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-25 12:53:26,431 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-25 12:53:26,552 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-25 12:53:26,961 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-25 12:53:27,045 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-25 12:53:30,031 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-25 12:53:31,777 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-25 12:53:34,585 - INFO - pages.admin_page - Opened Admin Tab
+2025-09-25 12:53:37,060 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='User Role']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-25 12:53:37,271 - INFO - pages.base_page - Opened dropdown: ('xpath', "//label[text()='User Role']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-25 12:53:37,468 - INFO - pages.base_page - Selected option: Admin
+2025-09-25 12:53:37,471 - INFO - pages.base_page - Locating element: ('xpath', "//label[text()='Status']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-25 12:53:37,664 - INFO - pages.base_page - Opened dropdown: ('xpath', "//label[text()='Status']/../following-sibling::div//div[contains(@class,'oxd-select-text-input')]")
+2025-09-25 12:53:37,868 - INFO - pages.base_page - Selected option: Enabled
+2025-09-25 12:53:38,145 - INFO - pages.admin_page - Searched user with Username=mirza, Role=Admin, Employee=, Status=Enabled
+2025-09-25 12:53:39,649 - INFO - pages.admin_page - Opened edit form for mirza
+2025-09-25 12:53:40,895 - INFO - pages.admin_page - Checked 'Change Password' checkbox
+2025-09-25 12:53:41,487 - INFO - pages.admin_page - Entered new password
+2025-09-25 12:53:42,113 - INFO - pages.admin_page - Confirmed new password
+2025-09-25 12:53:42,846 - INFO - pages.admin_page - Password successfully reset for user: mirza
+2025-09-25 12:53:45,117 - INFO - pages.admin_page - Success message displayed
+2025-09-25 12:53:45,173 - INFO - pages.base_page - Element is visible: ('xpath', "//div[contains(@class,'oxd-toast--success')]")

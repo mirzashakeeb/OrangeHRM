@@ -232,52 +232,76 @@ class AdminPage(BasePage):
             f"Role={new_role}, Status={new_status}, PasswordChanged={change_password}"
         )
 
-    #----------------RESET PASSWORD-------------------
+    # ---------------- RESET PASSWORD -------------------
 
     @allure.step("Reset password for user: {username}")
     def reset_password(self, username, new_password):
-        """Reset password for an existing user."""
 
-        # ---- Click Reset Password button safely ----
-        reset_button = (
-        By.XPATH, f"//div[text()='{username}']/../following-sibling::div//button[contains(text(),'Reset Password')]")
-        btn_reset = WebDriverWait(self.driver, self.timeout).until(
-            EC.element_to_be_clickable(reset_button)
+        # Locators
+        change_password_checkbox = (By.XPATH, "//span[@class='oxd-checkbox-input oxd-checkbox-input--active --label-right oxd-checkbox-input']")
+        new_password_input = (By.XPATH, "(//input[@type='password'])[1]")
+        confirm_password_input = (By.XPATH, "(//input[@type='password'])[2]")
+        edit_icon = (
+            By.XPATH,
+            f"//div[text()='{username}']/ancestor::div[contains(@class,'oxd-table-row')]"
+            "//i[@class='oxd-icon bi-pencil-fill']"
         )
-        self.driver.execute_script("arguments[0].scrollIntoView(true);", btn_reset)
-        time.sleep(0.3)  # let animations settle
-        btn_reset.click()
 
-        # ---- Enter new password ----
-        password_input = WebDriverWait(self.driver, self.timeout).until(
-            EC.element_to_be_clickable(self.add_password)
+        # --- Open Edit Page for Employee ---
+        WebDriverWait(self.driver, self.timeout).until(
+            EC.element_to_be_clickable(edit_icon)
+        ).click()
+        logger.info(f"Opened edit form for {username}")
+
+        # --- Toggle Change Password Checkbox ---
+        WebDriverWait(self.driver, self.timeout).until(
+            EC.element_to_be_clickable(change_password_checkbox)
+        ).click()
+        logger.info("Checked 'Change Password' checkbox")
+
+        # --- Enter New Password ---
+        pwd = WebDriverWait(self.driver, self.timeout).until(
+            EC.visibility_of_element_located(new_password_input)
         )
-        password_input.clear()
-        password_input.send_keys(new_password)
+        pwd.clear()
+        pwd.send_keys(new_password)
+        logger.info("Entered new password")
 
-        confirm_input = WebDriverWait(self.driver, self.timeout).until(
-            EC.element_to_be_clickable(self.add_confirm_password)
+        # --- Confirm New Password ---
+        confirm_pwd = WebDriverWait(self.driver, self.timeout).until(
+            EC.visibility_of_element_located(confirm_password_input)
         )
-        confirm_input.clear()
-        confirm_input.send_keys(new_password)
+        confirm_pwd.clear()
+        confirm_pwd.send_keys(new_password)
+        logger.info("Confirmed new password")
 
-        # ---- Click Save ----
+        # --- Click Save ---
         save_btn = WebDriverWait(self.driver, self.timeout).until(
             EC.element_to_be_clickable(self.save_button)
         )
         self.driver.execute_script("arguments[0].scrollIntoView(true);", save_btn)
         time.sleep(0.3)
         save_btn.click()
-
         logger.info(f"Password successfully reset for user: {username}")
-
 
     #-------------CHECK MANDATORY FIELD----------------
 
     @allure.step("Check mandatory field validation")
     def check_mandatory_fields(self):
+        # Wait until Save button is visible and clickable
         WebDriverWait(self.driver, self.timeout).until(
             EC.element_to_be_clickable(self.save_button)
-        ).click()
-        error_messages = self.driver.find_elements(By.XPATH, "//span[contains(@class,'oxd-input-field-error-message')]")
+        )
+
+        # Click Save
+        self.click(self.save_button)
+
+        # Wait until at least one error message appears
+        error_messages = WebDriverWait(self.driver, self.timeout).until(
+            EC.visibility_of_all_elements_located(
+                (By.XPATH, "//span[contains(@class,'oxd-input-field-error-message')]")
+            )
+        )
+
+        # Return only non-empty error texts
         return [err.text for err in error_messages if err.text.strip()]
