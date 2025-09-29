@@ -1,0 +1,16 @@
+2025-09-25 16:36:29,622 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-25 16:36:36,441 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-25 16:36:37,784 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-25 16:36:38,136 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-25 16:36:38,240 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-25 16:36:38,600 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-25 16:36:38,672 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-25 16:36:42,147 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-25 16:36:44,323 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-25 16:36:44,683 - INFO - pages.base_page - Locating element: ('xpath', "//span[text()='PIM']")
+2025-09-25 16:36:44,755 - INFO - pages.base_page - Clicking element: ('xpath', "//span[text()='PIM']")
+2025-09-25 16:36:46,107 - INFO - pages.dashboard_page - Navigated to PIM Module
+2025-09-25 16:36:46,115 - INFO - pages.base_page - Locating element: ('xpath', "//input[@placeholder='Type for hints...'][1]")
+2025-09-25 16:36:48,092 - INFO - pages.base_page - Typing into element ('xpath', "//input[@placeholder='Type for hints...'][1]"): George Al Kaseri
+2025-09-25 16:36:48,520 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-25 16:36:48,552 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")

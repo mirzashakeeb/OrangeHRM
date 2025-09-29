@@ -1,0 +1,15 @@
+2025-09-29 12:30:25,886 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-29 12:30:32,182 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-29 12:30:33,523 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-29 12:30:33,854 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-29 12:30:33,952 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-29 12:30:34,398 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-29 12:30:34,478 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-29 12:30:37,650 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-29 12:30:39,961 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-29 12:30:40,317 - INFO - pages.base_page - Locating element: ('xpath', "//span[text()='PIM']")
+2025-09-29 12:30:40,391 - INFO - pages.base_page - Clicking element: ('xpath', "//span[text()='PIM']")
+2025-09-29 12:30:41,594 - INFO - pages.dashboard_page - Navigated to PIM Module
+2025-09-29 12:30:43,674 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-29 12:30:43,730 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-29 12:30:43,894 - INFO - pages.pim_page - Searched employee: mirza shakeeb farhan baig

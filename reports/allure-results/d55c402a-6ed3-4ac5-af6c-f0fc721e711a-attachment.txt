@@ -1,0 +1,24 @@
+[32mINFO    [0m automation:conftest.py:32 Initializing WebDriver fixture
+[32mINFO    [0m automation:driver_factory.py:14 Starting Chrome WebDriver
+[32mINFO    [0m WDM:logger.py:11 ====== WebDriver manager ======
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+[32mINFO    [0m WDM:logger.py:11 Driver [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74\chromedriver.exe] found in cache
+[32mINFO    [0m pages.base_page:base_page.py:18 Opening URL: https://opensource-demo.orangehrmlive.com/
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('name', 'username')
+[32mINFO    [0m pages.base_page:base_page.py:54 Typing into element ('name', 'username'): Admin
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('name', 'password')
+[32mINFO    [0m pages.base_page:base_page.py:54 Typing into element ('name', 'password'): ********
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('xpath', "//button[@type='submit']")
+[32mINFO    [0m pages.base_page:base_page.py:61 Clicking element: ('xpath', "//button[@type='submit']")
+[32mINFO    [0m pages.login_page:login_page.py:36 Login successful – Dashboard loaded
+[32mINFO    [0m pages.dashboard_page:dashboard_page.py:35 Dashboard is loaded
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('xpath', "//span[text()='PIM']")
+[32mINFO    [0m pages.base_page:base_page.py:61 Clicking element: ('xpath', "//span[text()='PIM']")
+[32mINFO    [0m pages.dashboard_page:dashboard_page.py:50 Navigated to PIM Module
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('xpath', "//input[@placeholder='Type for hints...'][1]")
+[32mINFO    [0m pages.base_page:base_page.py:54 Typing into element ('xpath', "//input[@placeholder='Type for hints...'][1]"): George Al Kaseri
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('xpath', "//button[@type='submit']")
+[32mINFO    [0m pages.base_page:base_page.py:61 Clicking element: ('xpath', "//button[@type='submit']")
+[32mINFO    [0m pages.pim_page:pim_page.py:87 Searched for employee: George Al Kaseri
+[32mINFO    [0m automation:conftest.py:43 WebDriver instance quit successfully

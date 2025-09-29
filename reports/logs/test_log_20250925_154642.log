@@ -1,0 +1,16 @@
+2025-09-25 15:46:50,456 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-25 15:46:56,432 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-25 15:46:57,720 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-25 15:46:58,136 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-25 15:46:58,256 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-25 15:46:58,721 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-25 15:46:58,809 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-25 15:47:02,265 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-25 15:47:04,745 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-25 15:47:05,081 - INFO - pages.base_page - Locating element: ('xpath', "//span[text()='PIM']")
+2025-09-25 15:47:05,185 - INFO - pages.base_page - Clicking element: ('xpath', "//span[text()='PIM']")
+2025-09-25 15:47:06,481 - INFO - pages.dashboard_page - Navigated to PIM Module
+2025-09-25 15:47:06,489 - INFO - pages.base_page - Locating element: ('xpath', "//input[@placeholder='Type for hints...'][1]")
+2025-09-25 15:47:07,473 - INFO - pages.base_page - Typing into element ('xpath', "//input[@placeholder='Type for hints...'][1]"): mirza shakeeb farhan baig
+2025-09-25 15:47:08,001 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-25 15:47:08,065 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")

@@ -20,7 +20,7 @@ class TestEditUser:
 
         admin_page.open_admin_tab()
 
-        existing_username = "ameenrahman1"
+        existing_username = "jane.smith.chrome.20250925145424"
         admin_page.search_user(username=existing_username, role="ESS", status="Enabled")
 
         admin_page.edit_user(username=existing_username, new_role="Admin", new_status="Disabled")

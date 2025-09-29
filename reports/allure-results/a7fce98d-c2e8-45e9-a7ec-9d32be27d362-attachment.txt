@@ -1,0 +1,19 @@
+[32mINFO    [0m automation:conftest.py:32 Initializing WebDriver fixture
+[32mINFO    [0m automation:driver_factory.py:14 Starting Chrome WebDriver
+[32mINFO    [0m WDM:logger.py:11 ====== WebDriver manager ======
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+[32mINFO    [0m WDM:logger.py:11 About to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+[32mINFO    [0m WDM:logger.py:11 Driver downloading response is 200
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+[32mINFO    [0m WDM:logger.py:11 Driver has been saved in cache [C:\Users\MIRZAS\.wdm\drivers\chromedriver\win64\109.0.5414.74]
+[32mINFO    [0m pages.base_page:base_page.py:18 Opening URL: https://opensource-demo.orangehrmlive.com/
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('name', 'username')
+[32mINFO    [0m pages.base_page:base_page.py:54 Typing into element ('name', 'username'): Admin
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('name', 'password')
+[32mINFO    [0m pages.base_page:base_page.py:54 Typing into element ('name', 'password'): ********
+[32mINFO    [0m pages.base_page:base_page.py:30 Locating element: ('xpath', "//button[@type='submit']")
+[32mINFO    [0m pages.base_page:base_page.py:61 Clicking element: ('xpath', "//button[@type='submit']")
+[32mINFO    [0m pages.login_page:login_page.py:36 Login successful – Dashboard loaded
+[32mINFO    [0m automation:conftest.py:43 WebDriver instance quit successfully

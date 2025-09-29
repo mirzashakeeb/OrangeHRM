@@ -1,0 +1,12 @@
+2025-09-29 12:10:46,622 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-29 12:10:52,365 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-29 12:10:54,195 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-29 12:10:54,573 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-29 12:10:54,647 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-29 12:10:55,030 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-29 12:10:55,108 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-29 12:10:58,272 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-29 12:11:01,190 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-29 12:11:01,565 - INFO - pages.base_page - Locating element: ('xpath', "//span[text()='PIM']")
+2025-09-29 12:11:01,634 - INFO - pages.base_page - Clicking element: ('xpath', "//span[text()='PIM']")
+2025-09-29 12:11:02,939 - INFO - pages.dashboard_page - Navigated to PIM Module

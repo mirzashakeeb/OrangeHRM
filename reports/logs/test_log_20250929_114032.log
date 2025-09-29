@@ -1,0 +1,45 @@
+2025-09-29 11:41:09,825 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-29 11:41:16,063 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-29 11:41:17,549 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-29 11:41:17,987 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-29 11:41:18,107 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-29 11:41:18,594 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-29 11:41:18,670 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-29 11:41:21,510 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-29 11:41:38,148 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-29 11:41:43,214 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-29 11:41:44,431 - INFO - pages.base_page - Typing into element ('name', 'username'): invaliduser
+2025-09-29 11:41:44,975 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-29 11:41:45,061 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-29 11:41:45,569 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-29 11:41:45,718 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-29 11:41:52,510 - WARNING - pages.login_page - Dashboard not found, checking error message
+2025-09-29 11:41:55,767 - ERROR - pages.login_page - Login failed – Neither dashboard nor error message appeared
+2025-09-29 11:42:07,895 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-29 11:42:13,555 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-29 11:42:14,879 - INFO - pages.base_page - Typing into element ('name', 'username'): admin
+2025-09-29 11:42:15,238 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-29 11:42:15,344 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-29 11:42:15,687 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-29 11:42:15,750 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-29 11:42:23,185 - WARNING - pages.login_page - Dashboard not found, checking error message
+2025-09-29 11:42:26,389 - ERROR - pages.login_page - Login failed – Neither dashboard nor error message appeared
+2025-09-29 11:42:42,174 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-29 11:42:46,916 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-29 11:42:48,537 - INFO - pages.base_page - Typing into element ('name', 'username'): 
+2025-09-29 11:42:48,813 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-29 11:42:48,894 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-29 11:42:49,184 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-29 11:42:49,261 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-29 11:42:54,694 - WARNING - pages.login_page - Dashboard not found, checking error message
+2025-09-29 11:42:57,897 - ERROR - pages.login_page - Login failed – Neither dashboard nor error message appeared
+2025-09-29 11:43:09,835 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-29 11:43:15,492 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-29 11:43:16,823 - INFO - pages.base_page - Typing into element ('name', 'username'): admin
+2025-09-29 11:43:17,150 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-29 11:43:17,250 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-29 11:43:17,623 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-29 11:43:17,702 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-29 11:43:20,891 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-29 11:43:24,573 - INFO - pages.dashboard_page - Logout successful
+2025-09-29 11:43:25,240 - INFO - pages.login_page - Login page is displayed

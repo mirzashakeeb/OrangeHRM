@@ -1,0 +1,15 @@
+2025-09-25 15:04:03,139 - INFO - pages.base_page - Opening URL: https://opensource-demo.orangehrmlive.com/
+2025-09-25 15:04:08,769 - INFO - pages.base_page - Locating element: ('name', 'username')
+2025-09-25 15:04:11,087 - INFO - pages.base_page - Typing into element ('name', 'username'): Admin
+2025-09-25 15:04:11,326 - INFO - pages.base_page - Locating element: ('name', 'password')
+2025-09-25 15:04:11,385 - INFO - pages.base_page - Typing into element ('name', 'password'): ********
+2025-09-25 15:04:11,697 - INFO - pages.base_page - Locating element: ('xpath', "//button[@type='submit']")
+2025-09-25 15:04:11,751 - INFO - pages.base_page - Clicking element: ('xpath', "//button[@type='submit']")
+2025-09-25 15:04:14,632 - INFO - pages.login_page - Login successful – Dashboard loaded
+2025-09-25 15:04:15,829 - INFO - pages.dashboard_page - Dashboard is loaded
+2025-09-25 15:04:19,008 - INFO - pages.admin_page - Opened Admin Tab
+2025-09-25 15:04:22,149 - INFO - pages.admin_page - Searched for user: jane.smith.chrome.20250925143136
+2025-09-25 15:04:23,317 - INFO - pages.admin_page - Clicked Delete button
+2025-09-25 15:04:23,908 - INFO - pages.admin_page - Confirmed deletion of user: jane.smith.chrome.20250925143136
+2025-09-25 15:04:25,033 - INFO - pages.admin_page - Success message displayed
+2025-09-25 15:04:25,085 - INFO - pages.base_page - Element is visible: ('xpath', "//div[contains(@class,'oxd-toast--success')]")

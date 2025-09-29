@@ -19,7 +19,7 @@ class TestDeleteUser:
         assert dashboard_page.is_dashboard_loaded()
 
         admin_page.open_admin_tab()
-        admin_page.delete_user(username="AndyTremblay0")
+        admin_page.delete_user(username="jane.smith.chrome.20250925143136")
 
         admin_page.wait_for_success_message()
         assert admin_page.is_visible(admin_page.success_message)
